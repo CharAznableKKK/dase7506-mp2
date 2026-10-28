@@ -1,0 +1,68 @@
+[
+  {
+    "method": "embedding_surface_pairwise_a0.1_none",
+    "reference": "baseline_majority",
+    "n": 355,
+    "wins": 74,
+    "losses": 23,
+    "net_correct": 51,
+    "difference_pp": 14.366197183098592,
+    "descriptive_exact_mcnemar_p": 2.027109075312698e-07,
+    "warning": "Exploratory: validation used for model selection; no multiple-testing correction."
+  },
+  {
+    "method": "embedding_pairwise_a0.1_none",
+    "reference": "embedding_pointwise_a0.1_none",
+    "n": 355,
+    "wins": 25,
+    "losses": 16,
+    "net_correct": 9,
+    "difference_pp": 2.535211267605634,
+    "descriptive_exact_mcnemar_p": 0.21102359760880063,
+    "warning": "Exploratory: validation used for model selection; no multiple-testing correction."
+  },
+  {
+    "method": "embedding_surface_pairwise_a0.1_none",
+    "reference": "embedding_pairwise_a0.1_none",
+    "n": 355,
+    "wins": 11,
+    "losses": 7,
+    "net_correct": 4,
+    "difference_pp": 1.1267605633802817,
+    "descriptive_exact_mcnemar_p": 0.480682373046875,
+    "warning": "Exploratory: validation used for model selection; no multiple-testing correction."
+  },
+  {
+    "method": "full_pairwise_a0.1_none",
+    "reference": "embedding_surface_pairwise_a0.1_none",
+    "n": 355,
+    "wins": 13,
+    "losses": 19,
+    "net_correct": -6,
+    "difference_pp": -1.6901408450704225,
+    "descriptive_exact_mcnemar_p": 0.37708558747544885,
+    "warning": "Exploratory: validation used for model selection; no multiple-testing correction."
+  },
+  {
+    "method": "embedding_surface_pairwise_a0.1_answer_mean",
+    "reference": "embedding_surface_pairwise_a0.1_none",
+    "n": 355,
+    "wins": 7,
+    "losses": 17,
+    "net_correct": -10,
+    "difference_pp": -2.816901408450704,
+    "descriptive_exact_mcnemar_p": 0.06391465663909912,
+    "warning": "Exploratory: validation used for model selection; no multiple-testing correction."
+  },
+  {
+    "method": "embedding_surface_pairwise_a0.1_none",
+    "reference": "surface_pairwise_a0.1_none",
+    "n": 355,
+    "wins": 57,
+    "losses": 19,
+    "net_correct": 38,
+    "difference_pp": 10.704225352112676,
+    "descriptive_exact_mcnemar_p": 1.4836899336372363e-05,
+    "warning": "Exploratory: validation used for model selection; no multiple-testing correction."
+  }
+]

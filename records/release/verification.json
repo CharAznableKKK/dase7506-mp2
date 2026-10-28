@@ -1,0 +1,317 @@
+{
+  "date_utc8": "2026-10-28",
+  "scope": "Technical verification of the standalone repository: data integrity, input contracts, offline inference, resources, retraining and frozen-score reproduction.",
+  "official_package_files": 20,
+  "official_package_integrity": "passed",
+  "frozen_hashes": "passed",
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "dependencies": [
+      {
+        "name": "numpy",
+        "version": "2.5.3"
+      },
+      {
+        "name": "pip",
+        "version": "25.0.1"
+      },
+      {
+        "name": "threadpoolctl",
+        "version": "3.6.0"
+      }
+    ],
+    "new_venv": true,
+    "installed_from_local_wheels": true
+  },
+  "data_check": {
+    "protocol": "dase7506-mp2-open-hard-verifier-v5",
+    "splits": {
+      "train": {
+        "questions": 4755,
+        "embedding_shape": [
+          4755,
+          4,
+          1024
+        ]
+      },
+      "validation": {
+        "questions": 798,
+        "embedding_shape": [
+          798,
+          4,
+          1024
+        ]
+      },
+      "test": {
+        "questions": 467,
+        "embedding_shape": [
+          467,
+          4,
+          1024
+        ]
+      }
+    },
+    "status": "passed"
+  },
+  "unit_tests": "9 passed",
+  "method_check": {
+    "status": "passed",
+    "checks": [
+      "native integer indices",
+      "798-question bank",
+      "37-question reversed subset",
+      "unseen IDs",
+      "single question",
+      "empty bank",
+      "empty working directory",
+      "checkpoint-only file reads",
+      "network audit hook",
+      "loaded library thread count <= 4"
+    ],
+    "files_read_during_inference": [
+      "config.json",
+      "weights.npz"
+    ],
+    "threadpools": [
+      {
+        "user_api": "blas",
+        "internal_api": "openblas",
+        "num_threads": 4,
+        "prefix": "libscipy_openblas",
+        "filepath": "C:\\Users\\krabs\\.codex\\worktrees\\871c\\MP2\\.venv\\Lib\\site-packages\\numpy.libs\\libscipy_openblas64_-ed4f167a5330424524f45258e7ca2c8d.dll",
+        "version": "0.3.34.106.0",
+        "threading_layer": "pthreads",
+        "architecture": "Haswell"
+      }
+    ],
+    "cpu": "12th Gen Intel(R) Core(TM) i9-12900H",
+    "os": "Windows-11-10.0.22631-SP0",
+    "logical_cpu_count": 20,
+    "verification_seconds": 0.23747729999013245,
+    "reference_cpu_verified": false,
+    "references_read": false
+  },
+  "training": {
+    "config": {
+      "mode": "learned",
+      "feature_set": "embedding_surface",
+      "objective": "pairwise",
+      "alpha": 0.1,
+      "pooling": "none",
+      "seed": 20261024
+    },
+    "training_seconds": 1.7218059999868274,
+    "training_split": "train",
+    "validation_used_for_fit": false,
+    "test_read": false
+  },
+  "retrained_assets_byte_identical": true,
+  "test": {
+    "correct": 384,
+    "n": 467,
+    "accuracy": 82.22698072805139,
+    "all_ids_and_choices_identical": true,
+    "fresh_prediction_plus_scoring_seconds": 0.7921397000318393,
+    "timer_includes_command_log_writes": true
+  },
+  "inference_assets_uncompressed_bytes": 25530,
+  "markdown_links_checked": 18,
+  "report": {
+    "word_count": 2285,
+    "html_content_matches_markdown": true,
+    "pageCount": 6,
+    "format": "A4 210x297 mm; 100% scale; browser headers/footers disabled",
+    "browser": "156.0.4314.50",
+    "pdfGenerated": false,
+    "pages": [
+      {
+        "page": 1,
+        "height": 1122.515625,
+        "availableContentHeight": 929.875,
+        "contentBottom": 1006.96875,
+        "allowedBottom": 1035.640625,
+        "horizontalOverflow": false,
+        "verticalOverflow": false
+      },
+      {
+        "page": 2,
+        "height": 1122.515625,
+        "availableContentHeight": 929.875,
+        "contentBottom": 2131.5,
+        "allowedBottom": 2158.15625,
+        "horizontalOverflow": false,
+        "verticalOverflow": false
+      },
+      {
+        "page": 3,
+        "height": 1122.515625,
+        "availableContentHeight": 929.875,
+        "contentBottom": 3248.53125,
+        "allowedBottom": 3280.671875,
+        "horizontalOverflow": false,
+        "verticalOverflow": false
+      },
+      {
+        "page": 4,
+        "height": 1122.515625,
+        "availableContentHeight": 929.875,
+        "contentBottom": 4362.140625,
+        "allowedBottom": 4403.1875,
+        "horizontalOverflow": false,
+        "verticalOverflow": false
+      },
+      {
+        "page": 5,
+        "height": 1122.515625,
+        "availableContentHeight": 929.875,
+        "contentBottom": 5405.21875,
+        "allowedBottom": 5525.703125,
+        "horizontalOverflow": false,
+        "verticalOverflow": false
+      },
+      {
+        "page": 6,
+        "height": 1122.515625,
+        "availableContentHeight": 929.875,
+        "contentBottom": 6048.484375,
+        "allowedBottom": 6648.21875,
+        "horizontalOverflow": false,
+        "verticalOverflow": false
+      }
+    ],
+    "layoutPassed": true,
+    "visual_review": "Six-page layout rechecked after removing personal identifier; no horizontal or vertical content overflow."
+  },
+  "local_checks": "passed",
+  "overall_status": "Technical checks passed; reference-CPU measurement remains unavailable.",
+  "no_pdf_generated": true,
+  "no_algorithm_or_hyperparameter_changes": true,
+  "requirements_review": [
+    {
+      "requirement": "Source, training process and exact commands",
+      "status": "passed",
+      "evidence": [
+        "README.md",
+        "code/selection.py",
+        "code/training.py",
+        "code/train_model.py",
+        "code/run_experiments.py"
+      ]
+    },
+    {
+      "requirement": "Training-only fitting; validation selection; frozen final test",
+      "status": "passed based on unchanged frozen code, tests and protocol",
+      "evidence": [
+        "docs/RESEARCH_PROTOCOL.md",
+        "records/final/freeze.json",
+        "records/reviews/core-review.md"
+      ]
+    },
+    {
+      "requirement": "No external datasets/weights, answer lookup or cached inference predictions",
+      "status": "passed based on source review and restricted inference audit",
+      "evidence": [
+        "code/selection.py",
+        "records/release/method-check.json"
+      ]
+    },
+    {
+      "requirement": "New banks, variable counts, renamed IDs, bank order and native int choices",
+      "status": "passed",
+      "evidence": [
+        "records/release/method-check.json"
+      ]
+    },
+    {
+      "requirement": "Offline CPU with at most four total threads",
+      "status": "passed locally",
+      "evidence": [
+        "records/release/method-check.json"
+      ]
+    },
+    {
+      "requirement": "Fresh prediction and scoring at most 30 seconds on reference Xeon Platinum 8457C",
+      "status": "local timing passed; reference CPU remains unverified",
+      "evidence": [
+        "records/release/commands.json",
+        "records/release/verification.json"
+      ]
+    },
+    {
+      "requirement": "Uncompressed additional inference assets <=16 MiB",
+      "status": "passed: 25530 bytes",
+      "evidence": [
+        "assets/final/config.json",
+        "assets/final/weights.npz",
+        "records/final/freeze.json"
+      ]
+    },
+    {
+      "requirement": "Training resources, seed, versions and training/search costs",
+      "status": "passed: CPU; seed 20261024; versions and costs recorded",
+      "evidence": [
+        "docs/EXPERIMENTS.md",
+        "records/experiments/validation-study-v1.json",
+        "records/release/training.json",
+        "records/release/verification.json"
+      ]
+    },
+    {
+      "requirement": "Initial/improved comparison, ablation, errors and resource analysis",
+      "status": "passed",
+      "evidence": [
+        "report/REPORT.md",
+        "docs/EXPERIMENTS.md",
+        "records/analysis/paired-comparisons.json",
+        "records/analysis/validation-error-examples.json"
+      ]
+    },
+    {
+      "requirement": "Report <=10 pages including references",
+      "status": "passed for supplied six-page A4 HTML layout; Markdown pagination is renderer-dependent",
+      "evidence": [
+        "report/REPORT.html",
+        "report/REPORT.md",
+        "records/release/verification.json"
+      ]
+    },
+    {
+      "requirement": "Substantive AI help and reuse acknowledged; original licenses retained",
+      "status": "passed",
+      "evidence": [
+        "report/REPORT.md",
+        "code/data/LICENSE.txt",
+        "code/data/NOTICE.txt"
+      ]
+    },
+    {
+      "requirement": "Official score JSON and checkpoint reproduction without retraining",
+      "status": "passed: 384/467; all 467 choices match",
+      "evidence": [
+        "records/final/test-score.json",
+        "records/release/test-score.json",
+        "records/release/commands.json"
+      ]
+    },
+    {
+      "requirement": "Code/checkpoint version and hashes",
+      "status": "passed: frozen method and checkpoint hashes match the repository files",
+      "evidence": [
+        "records/release/source-mapping.json",
+        "records/release/files.json",
+        "README.md"
+      ]
+    }
+  ],
+  "evaluation_limitations": {
+    "reference_cpu": "Xeon Platinum 8457C has not been measured locally; recorded timings describe the stated local hardware."
+  },
+  "public_access": {
+    "repository": "https://github.com/CharAznableKKK/dase7506-mp2",
+    "checked_revision": "5a13bef93f2a83eac6382d83acc7cc796eaf9477",
+    "public": true,
+    "authentication_used_for_downloads": false,
+    "checkpoint_download_hashes_match": true,
+    "note": "This access check identifies the revision tested; subsequent documentation edits do not change the frozen checkpoint."
+  }
+}

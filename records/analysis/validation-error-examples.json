@@ -1,0 +1,135 @@
+[
+  {
+    "category": "improvement_over_vote",
+    "validation_index": 3,
+    "question": "Jay went to watch a singer in a one hour 20 minutes concert.  If there was a 10-minute intermission, and all the songs were 5 minutes except for one song that lasted 10 minutes, how many songs did she sing?",
+    "candidate_texts": [
+      "Jay attended a concert that started at 1:00 PM and ended at 1:20 PM. There was a 10-minute intermission, and all songs except one lasted 5 minutes.\n\n- Total time of the concert: 1 hour 20 minutes = 90 minutes.\n- Intermission: 10 minutes.\n- Time spent singing: 90 - 10 = 80 minutes.\n- Number of songs: 80 / 5 = 16 songs.\n\n#### <numeric answer> 16",
+      "Jay attended a concert that lasted **1 hour 20 minutes**. There was a **10-minute intermission**. The songs were **5 minutes except for one song that lasted 10 minutes**.\n\n1. **Convert the total concert time to minutes**:\n   - 1 hour = 60 minutes\n   - 20 minutes = 20 minutes\n   - Total concert time = $60 + 20 = 80$ minutes\n\n2. **Subtract the intermission time** to find the time she actually sang:\n   - $80 - 10 = 70$ minutes\n\n3. **Determine the number of songs**:\n   - The songs were **5 minutes** except for one song that lasted **10 minutes**.\n   - So, the total time for all songs is:\n     $$\n     70 = 6 \\times 10 + 10 = 70\n     $$\n   - Number of songs = $70 \\div 5 = 14$\n\n### Final Answer:\n$$\n\\boxed{14}\n$$",
+      "Jay attended a concert that started at 9:00 AM and ended at 9:40 AM. This is a **1-hour 20-minute** concert, which means the total duration is:\n\n$$\n60 + 20 = 80 \\text{ minutes}\n$$\n\nThe concert includes an **intermission** of 10 minutes, so the actual time she sang is:\n\n$$\n80 - 10 = 70 \\text{ minutes}\n$$\n\nEach song is **5 minutes** except for **one song that lasted 10 minutes**. Let\u2019s denote the number of songs she sang as $ x $.\n\n- The time taken for the **other $ x - 1 $** songs is $ 5(x - 1) $ minutes.\n- The time for the **10-minute song** is 10 minutes.\n\nSo the total time is:\n\n$$\n5(x - 1) + 10 = 70\n$$\n\nSolving:\n\n$$\n5x - 5 + 10 = 70 \\\\\n5x + 5 = 70 \\\\\n5x = 65 \\\\\nx = 13\n$$\n\n### Final Answer:\n\n$$\n\\boxed{13}\n$$",
+      "Jay attended a concert that lasted **1 hour 20 minutes** and had a **10-minute intermission**. The songs were **5 minutes** except for one song that lasted **10 minutes**.\n\n1. **Total time of the concert**:  \n   $1$ hour $20$ minutes = $70$ minutes.\n\n2. **Time taken for intermission**:  \n   $10$ minutes.\n\n3. **Time for songs**:  \n   $70 - 10 = 60$ minutes.\n\n4. **Number of songs**:  \n   The songs lasted 5 minutes except for one song that lasted 10 minutes. So, the total time is:  \n   $60 = 5 \\times 12 + 10$  \n   $60 = 60 + 10$ \u2705\n\n   Therefore, the number of songs is **12**.\n\n#### Final answer: **12**."
+    ],
+    "parsed_answers": [
+      "16",
+      "14",
+      "13",
+      "12"
+    ],
+    "correct_candidates": [
+      2
+    ],
+    "selected": 2,
+    "majority_selected": 0
+  },
+  {
+    "category": "improvement_over_vote",
+    "validation_index": 22,
+    "question": "Eddy\u2019s spider plant produces 2 baby plants 2 times a year.  After 4 years, how many baby plants will the mother plant have produced?",
+    "candidate_texts": [
+      "We are told that Eddy\u2019s spider plant produces **2 baby plants 2 times a year**.\n\n### Step 1: Calculate the number of baby plants per year\n- 2 baby plants per year.\n\n### Step 2: Multiply by the number of years\n- After 4 years:  \n  $ 2 \\text{ baby plants/year} \\times 4 \\text{ years} = 8 \\text{ baby plants} $\n\n### Final Answer:  \n$$\n\\boxed{8}\n$$",
+      "We are told:\n\n- Eddy\u2019s spider plant produces **2 baby plants 2 times a year**.\n- After **4 years**, how many baby plants will the mother plant have produced?\n\n### Step-by-step:\n\n- Each year, the plant produces 2 baby plants.\n- After 1 year: 2 baby plants  \n- After 2 years: 2 \u00d7 2 = 4 baby plants  \n- After 3 years: 2 \u00d7 4 = 8 baby plants  \n- After 4 years: 2 \u00d7 8 = **16 baby plants**\n\n### Final answer:\n\n#### <numeric answer> 16",
+      "Eddy\u2019s spider plant produces 2 baby plants 2 times a year. After 4 years, the mother plant will have produced:\n\n$$\n2 \\text{ plants/year} \\times 2 \\text{ years} = \\boxed{4} \\text{ baby plants}\n$$\n\n#### <numeric answer> 4.",
+      "Eddy\u2019s spider plant produces 2 baby plants 2 times a year. After 4 years, the mother plant will have produced:\n\n$$\n2 \\text{ plants/year} \\times 2 \\text{ years} = \\boxed{4} \\text{ baby plants}\n$$\n\n#### <numeric answer> 4."
+    ],
+    "parsed_answers": [
+      "8",
+      "16",
+      "4",
+      "4"
+    ],
+    "correct_candidates": [
+      1
+    ],
+    "selected": 1,
+    "majority_selected": 2
+  },
+  {
+    "category": "regression_vs_vote",
+    "validation_index": 29,
+    "question": "Megan bought 2 dozen eggs. As she was walking to her car, she dropped a tray of eggs. 3 eggs broke, and twice as many cracked. What is the difference between the eggs that are still in perfect condition and those that are cracked?",
+    "candidate_texts": [
+      "Megan bought **2 dozen** eggs, which is **24 eggs**.\n\nShe dropped a tray of eggs, and:\n\n- **3 eggs** broke.\n- **Twice as many cracked** = $2 \\times 3 = 6$ eggs cracked.\n\nSo, the **perfect condition** eggs = $24 - 3 - 6 = 15$.\n\nThe **difference** between perfect condition and cracked eggs = $15 - 6 = 9$.\n\n#### <numeric answer> 9",
+      "Megan bought **2 dozen** eggs, which is **24 eggs**.  \nShe dropped a tray of eggs, and **3 eggs broke**, and **twice as many cracked**.\n\nSo, **3 cracked eggs**.  \nThe number of eggs still in **perfect condition** is:\n\n$$\n24 - 3 = 21\n$$\n\nThe difference between the eggs still in perfect condition and those cracked is:\n\n$$\n21 - 3 = 18\n$$\n\n#### <numeric answer> 18",
+      "Megan bought 2 dozen eggs, which is **24 eggs**. She dropped a tray of eggs, and **3 eggs broke**, and **twice as many cracked**, meaning **6 eggs cracked**.\n\n- Perfect condition: $ 24 - 3 - 6 = 15 $ eggs.\n- Cracked: $ 3 + 6 = 9 $ eggs.\n\nThe difference between the eggs that are still in perfect condition and those that are cracked is:\n\n$$\n15 - 9 = \\boxed{6}\n$$\n\n#### <numeric answer> 6",
+      "Megan bought **2 dozen** eggs, which is **24 eggs**.\n\nShe dropped a **tray of eggs**, and:\n\n- **3 eggs** broke.\n- **Twice as many cracked**, so **6 cracked eggs**.\n\nNow, we need to find the **difference between the perfect condition eggs** and the **cracked eggs**.\n\n- Perfect condition eggs: $ 24 - 3 - 6 = 15 $ eggs.\n- Cracked eggs: $ 6 $ eggs.\n- Perfect condition eggs: $ 15 $ eggs.\n\n### Final answer:  \n**15**"
+    ],
+    "parsed_answers": [
+      "9",
+      "18",
+      "6",
+      null
+    ],
+    "correct_candidates": [
+      0
+    ],
+    "selected": 2,
+    "majority_selected": 0
+  },
+  {
+    "category": "regression_vs_vote",
+    "validation_index": 31,
+    "question": "Grace baked 4 whole pumpkin pies. She sold 1 whole pumpkin pie and gave 1 whole pumpkin pie to her friend. The remaining whole pumpkin pies were each sliced into 6 pieces. Her family ate 2/3 pieces. How many pieces of pumpkin pie were left?",
+    "candidate_texts": [
+      "Grace baked **4 whole pumpkin pies**.  \nShe sold **1 whole pumpkin pie** and gave **1 whole pumpkin pie** to her friend.  \nSo, she had **3 whole pumpkin pies** left.  \n\nEach of those pies was sliced into **6 pieces**.  \nHer family ate **$ \\frac{2}{3} $** of the total pieces.  \n\nSo, the total number of pieces is:  \n$$ 3 \\times 6 = 18 $$\n\nShe ate $ \\frac{2}{3} $ of 18:  \n$$ \\frac{2}{3} \\times 18 = 12 $$\n\nThe number of pieces left is:  \n$$ 18 - 12 = 6 $$\n\n#### <numeric answer> 6",
+      "Grace baked 4 whole pumpkin pies.  \nShe sold **1** pie and gave **1** pie to her friend.  \nSo, she had **2** whole pies left.  \n\nEach of these 2 pies was sliced into **6 pieces**, so she had **12** pieces in total.  \n\nHer family ate **$\\frac{2}{3}$** of the pieces.  \n\nTo find how many pieces are left:  \n$$\n12 - \\frac{2}{3} \\times 12 = 12 - 8 = 4\n$$  \n\n**Answer:** 4 pieces of pumpkin pie were left.  \n\n#### <numeric answer> 4",
+      "Grace baked **4 whole pumpkin pies**.  \nShe sold **1 whole pumpkin pie** and gave **1 whole pumpkin pie** to her friend.  \nSo, she baked **3** whole pies, and **2** were sold and given away.  \n\nThe remaining **1 whole pumpkin pie** was sliced into **6 pieces**.  \n\nHer family ate **$\\frac{2}{3}$** of the remaining **6** pieces.  \n\n**Total pieces left**:  \n- 1 whole pie = 6 pieces  \n- 6 pieces \u00d7 $\\frac{2}{3}$ = 4 pieces  \n- So, **6 - 4 = 2** pieces left.\n\n#### <numeric answer> 2",
+      "Grace baked **4 whole pumpkin pies**. She sold **1 whole pumpkin pie** and gave **1 whole pumpkin pie** to her friend.  \nSo, she **baked 4 pies**, sold 1, and gave 1, leaving **2 whole pies**.\n\nEach of the remaining 2 whole pies was sliced into **6 pieces**.  \nSo, the total number of **sliced pieces** is:  \n$ 2 \\times 6 = 12 $ pieces.\n\nHer family ate $ \\frac{2}{3} $ of the pieces.  \nSo, the number of pieces eaten is:  \n$ \\frac{2}{3} \\times 12 = 8 $ pieces.\n\nThe number of **remaining pieces** is:  \n$ 12 - 8 = 4 $.\n\n#### <numeric answer> 4"
+    ],
+    "parsed_answers": [
+      "6",
+      "4",
+      "2",
+      "4"
+    ],
+    "correct_candidates": [
+      1,
+      3
+    ],
+    "selected": 0,
+    "majority_selected": 1
+  },
+  {
+    "category": "both_wrong",
+    "validation_index": 32,
+    "question": "Yun had 20 paperclips initially, but then lost 12. Marion has 1/4 more than what Yun currently has, plus 7. How many paperclips does Marion have?",
+    "candidate_texts": [
+      "We are given the following information:\n\n- Yun had **20 paperclips initially**.\n- Yun **lost 12**, so Yun now has:  \n  $$\n  20 - 12 = 8 \\text{ paperclips}\n  $$\n\n- Marion has:  \n  $$\n  \\frac{1}{4} \\text{ more than what Yun currently has, plus } 7\n  $$  \n  So,  \n  $$\n  \\frac{1}{4} \\times 8 + 7 = 2 + 7 = 9\n  $$\n\n### Final Answer:\n$$\n\\boxed{9}\n$$",
+      "Yun had 20 paperclips initially, then lost 12. So, he currently has:\n\n$$\n20 - 12 = 8 \\text{ paperclips}\n$$\n\nMarion has:\n\n$$\n\\frac{1}{4} \\text{ more than what Yun currently has, plus 7}\n$$\n\nSo, Marion has:\n\n$$\n8 + \\frac{1}{4} \\times 8 + 7 = 8 + 2 + 7 = 17 \\text{ paperclips}\n$$\n\n### Final Answer:\n$$\n\\boxed{17}\n$$",
+      "We are given:\n\n- Yun had **20** paperclips initially.\n- Yun **lost 12**, so he now has:  \n  $ 20 - 12 = 8 $ paperclips.\n\nMarion has:  \n$ \\frac{1}{4} \\text{ more than what Yun currently has, plus } 7 $.\n\nSo:  \nMarion has:  \n$ 8 + \\frac{1}{4} \\times 8 + 7 = 8 + 2 + 7 = 17 $ paperclips.\n\n### Final Answer:\n#### <numeric answer> 17.",
+      "We are given the following:\n\n- Yun had **20 paperclips** initially.\n- Then lost **12**, so **Yun currently has** $ 20 - 12 = 8 $ paperclips.\n\n- Marion has **$ \\frac{1}{4} $ more than what Yun currently has, plus 7**.\n\nSo, we calculate:\n\n$$\n\\text{Marion's paperclips} = 8 + \\left( \\frac{1}{4} \\times 8 \\right) + 7\n$$\n\n$$\n= 8 + 2 + 7 = 17\n$$\n\n### Final Answer:\n$$\n\\boxed{17}\n$$"
+    ],
+    "parsed_answers": [
+      "9",
+      "17",
+      "17",
+      "17"
+    ],
+    "correct_candidates": [
+      0
+    ],
+    "selected": 3,
+    "majority_selected": 1
+  },
+  {
+    "category": "both_wrong",
+    "validation_index": 44,
+    "question": "Three different 6th grade classes are combining for a square dancing unit.  If possible, the teachers would like each male student to partner with a female student for the unit.  The first class has 17 males and 13 females, while the second class has 14 males and 18 females, and the third class has 15 males and 17 females.  When the classes are combined, how many students will be unable to partner with a student of the opposite gender?",
+    "candidate_texts": [
+      "We are told that each male student must partner with a female student, and we need to find how many students **cannot** partner with a student of the opposite gender when all three classes are combined.\n\n### Step 1: Total number of students\n\n- **Class 1:** 17 males + 13 females = 30 students  \n- **Class 2:** 14 males + 18 females = 32 students  \n- **Class 3:** 15 males + 17 females = 32 students  \n\n**Total students = 30 + 32 + 32 = 94 students**\n\n---\n\n### Step 2: Total number of possible pairings\n\n- Each student must pair with exactly one student of the opposite gender.  \n- So, the total number of possible pairings is the **minimum** of the total number of males and females, since we can't pair more than one person with each gender.\n\n- **Males: 17 + 14 + 15 = 46**  \n- **Females: 13 + 18 + 17 = 48**\n\nSo, the **maximum number of possible pairings** is **46** (the number of males).\n\n---\n\n### Step 3: Find how many students are unable to partner\n\nWe subtract the number of students who can partner from the total number of students:\n\n$$\n94 - 46 = 48\n$$\n\n---\n\n### \u2705 Final Answer:\n\n$$\n\\boxed{48}\n$$",
+      "We are given the number of males and females in each class:\n\n- **Class 1**: 17 males, 13 females  \n- **Class 2**: 14 males, 18 females  \n- **Class 3**: 15 males, 17 females  \n\nWe are told that **each male student should partner with a female student** for the unit, and we are to find how many **students will be unable to partner with a student of the opposite gender**.\n\n### Step 1: Total number of students\n\n- **Males**: $17 + 14 + 15 = 46$\n- **Females**: $13 + 18 + 17 = 48$\n\nSo, **total students = 46 + 48 = 94**\n\n### Step 2: Total number of possible partnerings\n\nEach male student can partner with **1 female**. Since there are 46 males, the maximum number of possible partnerings is:\n\n$$\n\\text{Maximum partnerings} = 46 \\times 1 = 46\n$$\n\n### Step 3: Number of students who **cannot partner**  \nWe subtract the number of students who can partner from the total number of students:\n\n$$\n\\text{Students who cannot partner} = 94 - 46 = \\boxed{48}\n$$\n\n### \u2705 Final Answer: **48**",
+      "We are given:\n\n- **Class 1**: 17 males, 13 females  \n- **Class 2**: 14 males, 18 females  \n- **Class 3**: 15 males, 17 females  \n\nWe need to find how many students **cannot partner with a student of the opposite gender** when all students are combined.\n\n### Step 1: Total number of students\n$$\n17 + 14 + 15 + 13 + 18 + 17 = 94 \\text{ students}\n$$\n\n### Step 2: Total number of pairs (opposite gender)\n\nTo form a valid pairing, each student must partner with someone of the opposite gender. So, we need to pair **13 + 14 + 15** = **42 students** in total (since each male is paired with a female, and each female is paired with a male).\n\n### Step 3: Total number of students who can partner with someone of the opposite gender\n\n- 13 females = 13 students who can partner  \n- 14 males = 14 students who can partner  \n- 15 males = 15 students who can partner  \n- 17 females = 17 students who can partner  \n- 18 females = 18 students who can partner  \n\nSo, total students who can partner:  \n$$\n13 + 14 + 15 + 17 + 18 = 87 \\text{ students}\n$$\n\n### Step 4: Number of students who **cannot** partner with someone of the opposite gender\n\n$$\n87 - 42 = 45\n$$\n\n### \u2705 Final Answer:\n\n$$\n\\boxed{45}\n$$",
+      "We are told that:\n\n- **Class A**: 17 males, 13 females  \n- **Class B**: 14 males, 18 females  \n- **Class C**: 15 males, 17 females  \n\nWe need to determine how many students **cannot partner with a student of the opposite gender** when all three classes are combined.\n\n---\n\n### Step 1: Total number of students\n\n$$\n17 + 14 + 15 = 46 \\text{ students}\n$$\n\n$$\n13 + 18 + 17 = 48 \\text{ students}\n$$\n\nSo, **48 students** are in total.\n\n---\n\n### Step 2: Partnering\n\nWe need to pair **male students** with **female students**, and vice versa. So:\n\n- Total male students = 17 + 14 + 15 = **46**\n- Total female students = 13 + 18 + 17 = **48**\n\nSince each male student must partner with one female student, and each female student can partner with one male student, the maximum number of valid pairings is the minimum of the total male and female students.\n\nSo, the **maximum number of students who can partner** is:\n\n$$\n\\min(46, 48) = 46\n$$\n\nThis means **46 students** can partner with a student of the opposite gender.\n\n---\n\n### Step 3: Number of students who cannot partner\n\n$$\n48 - 46 = 2\n$$\n\n---\n\n### \u2705 Final Answer:\n\n$$\n\\boxed{2}\n$$"
+    ],
+    "parsed_answers": [
+      "48",
+      "48",
+      "45",
+      "2"
+    ],
+    "correct_candidates": [
+      3
+    ],
+    "selected": 0,
+    "majority_selected": 0
+  }
+]

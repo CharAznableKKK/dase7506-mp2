@@ -1,0 +1,37 @@
+{
+  "status": "passed",
+  "checks": [
+    "native integer indices",
+    "798-question bank",
+    "37-question reversed subset",
+    "unseen IDs",
+    "single question",
+    "empty bank",
+    "empty working directory",
+    "checkpoint-only file reads",
+    "network audit hook",
+    "loaded library thread count <= 4"
+  ],
+  "files_read_during_inference": [
+    "config.json",
+    "weights.npz"
+  ],
+  "threadpools": [
+    {
+      "user_api": "blas",
+      "internal_api": "openblas",
+      "num_threads": 4,
+      "prefix": "libscipy_openblas",
+      "filepath": "D:\\STEPHEN\\OpenAI\\DASE7506\\MP2\\.venv\\Lib\\site-packages\\numpy.libs\\libscipy_openblas64_-ed4f167a5330424524f45258e7ca2c8d.dll",
+      "version": "0.3.34.106.0",
+      "threading_layer": "pthreads",
+      "architecture": "Haswell"
+    }
+  ],
+  "cpu": "12th Gen Intel(R) Core(TM) i9-12900H",
+  "os": "Windows-11-10.0.22631-SP0",
+  "logical_cpu_count": 20,
+  "verification_seconds": 0.2832226000000446,
+  "reference_cpu_verified": false,
+  "references_read": false
+}

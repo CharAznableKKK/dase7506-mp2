@@ -1,0 +1,25 @@
+{
+  "date_utc8": "2026-10-24",
+  "upstream_url": "https://github.com/xudongwu-0/DASE7506-MP2",
+  "upstream_commit": "bb801f4f2e7629d270df765ab12c333b2dc616bb",
+  "python": "3.12.14",
+  "python_executable": "D:\\STEPHEN\\OpenAI\\DASE7506\\MP2\\.venv\\Scripts\\python.exe",
+  "numpy": "2.5.3",
+  "pip": "25.0.1",
+  "platform": "Windows-11-10.0.22631-SP0",
+  "machine": "",
+  "processor": "",
+  "protocol": "dase7506-mp2-open-hard-verifier-v5",
+  "verification": {
+    "package_files": 20,
+    "package_integrity": "passed",
+    "data_check": "passed",
+    "pip_check": "No broken requirements found."
+  },
+  "method_status": "official empty interface; not implemented",
+  "training_performed": false,
+  "validation_scoring_performed": false,
+  "test_scoring_performed": false,
+  "line_endings": "Restored 17 CRLF-converted files to official LF bytes; all manifest hashes match; .gitattributes added.",
+  "note": "Official data checker reads references only for integrity/alignment. Initialization is not an inference resource benchmark."
+}

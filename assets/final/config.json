@@ -1,0 +1,8 @@
+{
+  "mode": "learned",
+  "feature_set": "embedding_surface",
+  "objective": "pairwise",
+  "alpha": 0.1,
+  "pooling": "none",
+  "seed": 20261024
+}

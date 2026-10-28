@@ -1,0 +1,48 @@
+{
+  "frozen_at": "2026-10-24T22:22:54.915351+08:00",
+  "source_commit": "cf8e1ca64c8d51ae0edb04e276acebbb38c56398",
+  "selected_experiment": "embedding_surface_pairwise_a0.1_none",
+  "selection_rule": "disagreement correct DESC, full correct DESC, asset bytes ASC, experiment ID ASC",
+  "source_and_asset_sha256": {
+    "code/selection.py": "f9504a1b90aa9d6ab9e5cca86be5588135470eed8a9d1f62fab4e782e0a0523d",
+    "code/training.py": "b66cf9b12f77c4fef2e9a9340dbeb3984aae2a36f549d44a85f22c5b7c960fb5",
+    "code/train_model.py": "47e5b4e7b7608b9c5fde5c0c14e8e65cf4984c025bf1477b68dfd4efdcda448d",
+    "code/common.py": "aecd10f7ff2e9e82ac5673d34d576e122caac51d2caaa7c7a8aa05906da51f6c",
+    "code/predict.py": "e7a627fbdc9ef8d4ab3189a6fa5ac02d56ae703ccd1a81507aea0bd66e042162",
+    "code/score_predictions.py": "fe12b809b82117aea722e5dfef7a55a88950a7cf50c49ec2ea007ea847959960",
+    "requirements.txt": "dd88f79fa543c82466505e0e3f87623bf9862b135cf2c2a2ba507d96c53d5888",
+    "assets/final/config.json": "1c932b67e9e9a630812b34af8aabfb12a6e6315ef3c1455daf4ea63864f04025",
+    "assets/final/weights.npz": "14055e116aaae3ca68e842e056ef8a4d7a5cafe004e580987c61d873bd99fa08"
+  },
+  "assets": {
+    "files": [
+      {
+        "file": "config.json",
+        "sha256": "1c932b67e9e9a630812b34af8aabfb12a6e6315ef3c1455daf4ea63864f04025",
+        "file_bytes": 146,
+        "uncompressed_bytes": 146
+      },
+      {
+        "file": "weights.npz",
+        "sha256": "14055e116aaae3ca68e842e056ef8a4d7a5cafe004e580987c61d873bd99fa08",
+        "file_bytes": 25862,
+        "uncompressed_bytes": 25384
+      }
+    ],
+    "uncompressed_bytes": 25530
+  },
+  "config": {
+    "mode": "learned",
+    "feature_set": "embedding_surface",
+    "objective": "pairwise",
+    "alpha": 0.1,
+    "pooling": "none",
+    "seed": 20261024
+  },
+  "selection_based_on": "train and validation only; no test scoring before this record",
+  "test_scored_at_freeze": false,
+  "reference_cpu_verified": false,
+  "review": "records/reviews/core-review.md",
+  "robustness": "records/robustness/candidate-check.json",
+  "note": "Canonical LF configuration for portable published hashes; numerical model identical to the validation winner."
+}

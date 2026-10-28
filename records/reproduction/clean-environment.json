@@ -1,0 +1,163 @@
+{
+  "checked_date_utc8": "2026-10-25",
+  "status": "passed",
+  "source_commit": "cf8e1ca64c8d51ae0edb04e276acebbb38c56398",
+  "installation": "new venv; pip --no-index from local wheels",
+  "official_test_score": {
+    "protocol": "dase7506-mp2-open-hard-verifier-v5",
+    "split": "test",
+    "correct": 384,
+    "n": 467,
+    "accuracy": 82.22698072805139,
+    "scoring_seconds": 0.1696217999997316
+  },
+  "predictions_identical": true,
+  "checkpoint_bytes_identical_after_training": true,
+  "frozen_source_hashes_match": true,
+  "prediction_plus_scoring_seconds": 1.28763269999763,
+  "method_check": {
+    "status": "passed",
+    "checks": [
+      "native integer indices",
+      "798-question bank",
+      "37-question reversed subset",
+      "unseen IDs",
+      "single question",
+      "empty bank",
+      "empty working directory",
+      "checkpoint-only file reads",
+      "network audit hook",
+      "loaded library thread count <= 4"
+    ],
+    "files_read_during_inference": [
+      "config.json",
+      "weights.npz"
+    ],
+    "threadpools": [
+      {
+        "user_api": "blas",
+        "internal_api": "openblas",
+        "num_threads": 4,
+        "prefix": "libscipy_openblas",
+        "filepath": "D:\\STEPHEN\\OpenAI\\DASE7506\\MP2\\code\\runs\\clean-reproduction\\env\\Lib\\site-packages\\numpy.libs\\libscipy_openblas64_-ed4f167a5330424524f45258e7ca2c8d.dll",
+        "version": "0.3.34.106.0",
+        "threading_layer": "pthreads",
+        "architecture": "Haswell"
+      }
+    ],
+    "cpu": "12th Gen Intel(R) Core(TM) i9-12900H",
+    "os": "Windows-11-10.0.22631-SP0",
+    "logical_cpu_count": 20,
+    "verification_seconds": 0.26448679999884916,
+    "reference_cpu_verified": false,
+    "references_read": false
+  },
+  "commands": [
+    {
+      "args": [
+        "-m",
+        "pip",
+        "install",
+        "--no-index",
+        "--find-links",
+        "D:\\STEPHEN\\OpenAI\\DASE7506\\MP2\\code\\runs\\wheelhouse",
+        "-r",
+        "requirements.txt"
+      ],
+      "seconds": 12.458649799998966,
+      "stdout": "Looking in links: d:\\STEPHEN\\OpenAI\\DASE7506\\MP2\\code\\runs\\wheelhouse\nProcessing d:\\stephen\\openai\\dase7506\\mp2\\code\\runs\\wheelhouse\\numpy-2.5.3-cp312-cp312-win_amd64.whl (from -r D:\\STEPHEN\\OpenAI\\DASE7506\\MP2\\code\\runs\\clean-reproduction\\source\\code\\requirements.txt (line 1))\nProcessing d:\\stephen\\openai\\dase7506\\mp2\\code\\runs\\wheelhouse\\threadpoolctl-3.6.0-py3-none-any.whl (from -r requirements.txt (line 3))\nInstalling collected packages: threadpoolctl, numpy\nSuccessfully installed numpy-2.5.3 threadpoolctl-3.6.0\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "-m",
+        "pip",
+        "check"
+      ],
+      "seconds": 0.7509385000012117,
+      "stdout": "No broken requirements found.\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "code",
+        "-p",
+        "test_project.py",
+        "-v"
+      ],
+      "seconds": 2.1523904999994556,
+      "stdout": "",
+      "stderr": "test_answer_pooling_changes_choice_using_only_same_answer_evidence (test_project.SelectionTests.test_answer_pooling_changes_choice_using_only_same_answer_evidence) ... ok\ntest_equivalent_numbers_share_votes_and_invalid_is_not_a_vote (test_project.SelectionTests.test_equivalent_numbers_share_votes_and_invalid_is_not_a_vote) ... ok\ntest_feature_contract_rejects_misaligned_embeddings (test_project.SelectionTests.test_feature_contract_rejects_misaligned_embeddings) ... ok\ntest_invalid_candidate_never_beats_valid_and_ties_are_stable (test_project.SelectionTests.test_invalid_candidate_never_beats_valid_and_ties_are_stable) ... ok\ntest_predictions_do_not_depend_on_ids_question_count_or_order (test_project.SelectionTests.test_predictions_do_not_depend_on_ids_question_count_or_order) ... ok\ntest_surface_features_handle_fractions_negative_values_and_missing_answers (test_project.SelectionTests.test_surface_features_handle_fractions_negative_values_and_missing_answers) ... ok\ntest_labels_keep_all_correct_candidates_and_reject_reference_mismatch (test_project.TrainingTests.test_labels_keep_all_correct_candidates_and_reject_reference_mismatch) ... ok\ntest_pairwise_fit_learns_correct_direction_and_roundtrips_checkpoint (test_project.TrainingTests.test_pairwise_fit_learns_correct_direction_and_roundtrips_checkpoint) ... ok\ntest_training_loader_refuses_test_and_validation_before_reading_files (test_project.TrainingTests.test_training_loader_refuses_test_and_validation_before_reading_files) ... ok\n\n----------------------------------------------------------------------\nRan 9 tests in 0.204s\n\nOK\n"
+    },
+    {
+      "args": [
+        "code/predict.py",
+        "--method",
+        "code/selection.py",
+        "--checkpoint",
+        "assets/final",
+        "--split",
+        "test",
+        "--output",
+        "replay/test-predictions.json"
+      ],
+      "seconds": 0.7873766999982763,
+      "stdout": "{\"protocol\": \"dase7506-mp2-open-hard-verifier-v5\", \"split\": \"test\", \"prediction_seconds\": 0.43304499999794643}\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "code/score_predictions.py",
+        "--split",
+        "test",
+        "--predictions",
+        "replay/test-predictions.json",
+        "--output",
+        "replay/test-score.json"
+      ],
+      "seconds": 0.5002248000018881,
+      "stdout": "{\n  \"protocol\": \"dase7506-mp2-open-hard-verifier-v5\",\n  \"split\": \"test\",\n  \"correct\": 384,\n  \"n\": 467,\n  \"accuracy\": 82.22698072805139,\n  \"scoring_seconds\": 0.1696217999997316\n}\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "code/train_model.py",
+        "--config",
+        "assets/final/config.json",
+        "--output",
+        "replay/retrained",
+        "--record",
+        "replay/training.json"
+      ],
+      "seconds": 2.519764099997701,
+      "stdout": "{\n  \"config\": {\n    \"mode\": \"learned\",\n    \"feature_set\": \"embedding_surface\",\n    \"objective\": \"pairwise\",\n    \"alpha\": 0.1,\n    \"pooling\": \"none\",\n    \"seed\": 20261024\n  },\n  \"training_seconds\": 2.1891986999980872,\n  \"training_split\": \"train\",\n  \"validation_used_for_fit\": false,\n  \"test_read\": false\n}\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "code/check_method.py",
+        "--checkpoint",
+        "assets/final",
+        "--output",
+        "replay/method-check.json"
+      ],
+      "seconds": 1.095688000001246,
+      "stdout": "{\n  \"status\": \"passed\",\n  \"checks\": [\n    \"native integer indices\",\n    \"798-question bank\",\n    \"37-question reversed subset\",\n    \"unseen IDs\",\n    \"single question\",\n    \"empty bank\",\n    \"empty working directory\",\n    \"checkpoint-only file reads\",\n    \"network audit hook\",\n    \"loaded library thread count <= 4\"\n  ],\n  \"files_read_during_inference\": [\n    \"config.json\",\n    \"weights.npz\"\n  ],\n  \"threadpools\": [\n    {\n      \"user_api\": \"blas\",\n      \"internal_api\": \"openblas\",\n      \"num_threads\": 4,\n      \"prefix\": \"libscipy_openblas\",\n      \"filepath\": \"D:\\\\STEPHEN\\\\OpenAI\\\\DASE7506\\\\MP2\\\\code\\\\runs\\\\clean-reproduction\\\\env\\\\Lib\\\\site-packages\\\\numpy.libs\\\\libscipy_openblas64_-ed4f167a5330424524f45258e7ca2c8d.dll\",\n      \"version\": \"0.3.34.106.0\",\n      \"threading_layer\": \"pthreads\",\n      \"architecture\": \"Haswell\"\n    }\n  ],\n  \"cpu\": \"12th Gen Intel(R) Core(TM) i9-12900H\",\n  \"os\": \"Windows-11-10.0.22631-SP0\",\n  \"logical_cpu_count\": 20,\n  \"verification_seconds\": 0.26448679999884916,\n  \"reference_cpu_verified\": false,\n  \"references_read\": false\n}\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "-m",
+        "pip",
+        "freeze"
+      ],
+      "seconds": 0.640315799995733,
+      "stdout": "numpy==2.5.3\nthreadpoolctl==3.6.0\n",
+      "stderr": ""
+    }
+  ]
+}

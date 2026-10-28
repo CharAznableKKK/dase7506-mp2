@@ -1,0 +1,14 @@
+{
+  "config": {
+    "mode": "learned",
+    "feature_set": "embedding_surface",
+    "objective": "pairwise",
+    "alpha": 0.1,
+    "pooling": "none",
+    "seed": 20261024
+  },
+  "training_seconds": 1.7218059999868274,
+  "training_split": "train",
+  "validation_used_for_fit": false,
+  "test_read": false
+}

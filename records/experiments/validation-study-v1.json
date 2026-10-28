@@ -1,0 +1,1269 @@
+{
+  "seed": 20261024,
+  "alphas": [
+    0.1,
+    1.0,
+    10.0
+  ],
+  "families": [
+    [
+      "surface",
+      "pairwise"
+    ],
+    [
+      "embedding",
+      "pointwise"
+    ],
+    [
+      "embedding",
+      "pairwise"
+    ],
+    [
+      "embedding_surface",
+      "pairwise"
+    ],
+    [
+      "full",
+      "pairwise"
+    ]
+  ],
+  "selection_rule": "disagreement correct DESC, full correct DESC, asset bytes ASC, experiment ID ASC",
+  "source_sha256": {
+    "selection.py": "f9504a1b90aa9d6ab9e5cca86be5588135470eed8a9d1f62fab4e782e0a0523d",
+    "training.py": "ddb934760afcdef61be998fee54f02a2b368f226c9bb8b5a7583a1a9fce0a98d",
+    "run_experiments.py": "f1f2eb53b426d355f4dd769fadcd8fc3896ea10a540a9acb1414bb854320d7f4",
+    "common.py": "aecd10f7ff2e9e82ac5673d34d576e122caac51d2caaa7c7a8aa05906da51f6c",
+    "predict.py": "e7a627fbdc9ef8d4ab3189a6fa5ac02d56ae703ccd1a81507aea0bd66e042162",
+    "score_predictions.py": "fe12b809b82117aea722e5dfef7a55a88950a7cf50c49ec2ea007ea847959960"
+  },
+  "total_search_seconds": 36.80053039999984,
+  "fit_count": 15,
+  "configuration_count": 33,
+  "winner": "embedding_surface_pairwise_a0.1_none",
+  "results": [
+    {
+      "experiment_id": "embedding_surface_pairwise_a0.1_none",
+      "config": {
+        "mode": "learned",
+        "feature_set": "embedding_surface",
+        "objective": "pairwise",
+        "alpha": 0.1,
+        "pooling": "none",
+        "seed": 20261024
+      },
+      "accuracy": 92.60651629072682,
+      "correct": 739,
+      "n": 798,
+      "disagreement_accuracy": 83.38028169014085,
+      "disagreement_correct": 296,
+      "disagreement_n": 355,
+      "fit_seconds": 0.38387539999985165,
+      "feature_seconds": 0.5685473000003185,
+      "prediction_plus_scoring_seconds": 0.8944124999998166,
+      "assets": {
+        "files": [
+          {
+            "file": "config.json",
+            "sha256": "072d892d781c80b95ba387567526993bf297a02391581aab76806526a520589a",
+            "file_bytes": 154,
+            "uncompressed_bytes": 154
+          },
+          {
+            "file": "weights.npz",
+            "sha256": "14055e116aaae3ca68e842e056ef8a4d7a5cafe004e580987c61d873bd99fa08",
+            "file_bytes": 25862,
+            "uncompressed_bytes": 25384
+          }
+        ],
+        "uncompressed_bytes": 25538
+      },
+      "checkpoint": "code/runs/validation-study-v1/embedding_surface_pairwise_a0.1_none/checkpoint"
+    },
+    {
+      "experiment_id": "full_pairwise_a0.1_answer_mean",
+      "config": {
+        "mode": "learned",
+        "feature_set": "full",
+        "objective": "pairwise",
+        "alpha": 0.1,
+        "pooling": "answer_mean",
+        "seed": 20261024
+      },
+      "accuracy": 92.35588972431077,
+      "correct": 737,
+      "n": 798,
+      "disagreement_accuracy": 82.8169014084507,
+      "disagreement_correct": 294,
+      "disagreement_n": 355,
+      "fit_seconds": 0.3554260000000795,
+      "feature_seconds": 0.5686883999997008,
+      "prediction_plus_scoring_seconds": 0.9406952999997884,
+      "assets": {
+        "files": [
+          {
+            "file": "config.json",
+            "sha256": "987341cda5e98480cb95d36052a13626373f2e1f0b63c129ce435acbfaaf235c",
+            "file_bytes": 148,
+            "uncompressed_bytes": 148
+          },
+          {
+            "file": "weights.npz",
+            "sha256": "d395cff54315a22a19a2d1b9ee51a55898277c66717281374e68af96948234b9",
+            "file_bytes": 25934,
+            "uncompressed_bytes": 25456
+          }
+        ],
+        "uncompressed_bytes": 25604
+      },
+      "checkpoint": "code/runs/validation-study-v1/full_pairwise_a0.1_answer_mean/checkpoint"
+    },
+    {
+      "experiment_id": "embedding_pairwise_a0.1_none",
+      "config": {
+        "mode": "learned",
+        "feature_set": "embedding",
+        "objective": "pairwise",
+        "alpha": 0.1,
+        "pooling": "none",
+        "seed": 20261024
+      },
+      "accuracy": 92.10526315789474,
+      "correct": 735,
+      "n": 798,
+      "disagreement_accuracy": 82.25352112676056,
+      "disagreement_correct": 292,
+      "disagreement_n": 355,
+      "fit_seconds": 0.46721900000011374,
+      "feature_seconds": 0.03619550000075833,
+      "prediction_plus_scoring_seconds": 0.833680099999583,
+      "assets": {
+        "files": [
+          {
+            "file": "config.json",
+            "sha256": "fc9f2882cfd350ee296d8f0eeba9b2ffe4ecd1761f06f6f148a2b311cc239901",
+            "file_bytes": 146,
+            "uncompressed_bytes": 146
+          },
+          {
+            "file": "weights.npz",
+            "sha256": "39af35ee42a550d03404a73197443d664c200ce66ea1a9a0ed23c06326d686a7",
+            "file_bytes": 25574,
+            "uncompressed_bytes": 25096
+          }
+        ],
+        "uncompressed_bytes": 25242
+      },
+      "checkpoint": "code/runs/validation-study-v1/embedding_pairwise_a0.1_none/checkpoint"
+    },
+    {
+      "experiment_id": "embedding_surface_pairwise_a1_none",
+      "config": {
+        "mode": "learned",
+        "feature_set": "embedding_surface",
+        "objective": "pairwise",
+        "alpha": 1.0,
+        "pooling": "none",
+        "seed": 20261024
+      },
+      "accuracy": 92.10526315789474,
+      "correct": 735,
+      "n": 798,
+      "disagreement_accuracy": 82.25352112676056,
+      "disagreement_correct": 292,
+      "disagreement_n": 355,
+      "fit_seconds": 0.36159159999988333,
+      "feature_seconds": 0.5685473000003185,
+      "prediction_plus_scoring_seconds": 0.8540647999998328,
+      "assets": {
+        "files": [
+          {
+            "file": "config.json",
+            "sha256": "264b51cba47820c94a5d392593f15f48418f2a63b51a647d194d676c4b10a3cd",
+            "file_bytes": 154,
+            "uncompressed_bytes": 154
+          },
+          {
+            "file": "weights.npz",
+            "sha256": "25dc86aacf1a708360e2848fa883eef8f1d6671e9513f66a701f8d4ee205bf01",
+            "file_bytes": 25862,
+            "uncompressed_bytes": 25384
+          }
+        ],
+        "uncompressed_bytes": 25538
+      },
+      "checkpoint": "code/runs/validation-study-v1/embedding_surface_pairwise_a1_none/checkpoint"
+    },
+    {
+      "experiment_id": "full_pairwise_a1_answer_mean",
+      "config": {
+        "mode": "learned",
+        "feature_set": "full",
+        "objective": "pairwise",
+        "alpha": 1.0,
+        "pooling": "answer_mean",
+        "seed": 20261024
+      },
+      "accuracy": 92.10526315789474,
+      "correct": 735,
+      "n": 798,
+      "disagreement_accuracy": 82.25352112676056,
+      "disagreement_correct": 292,
+      "disagreement_n": 355,
+      "fit_seconds": 0.42770609999934095,
+      "feature_seconds": 0.5686883999997008,
+      "prediction_plus_scoring_seconds": 0.8857453000000532,
+      "assets": {
+        "files": [
+          {
+            "file": "config.json",
+            "sha256": "1f602207b6ddc191911853211cb9fd0c436977dcdb41a50cd92ec4cc78bf2108",
+            "file_bytes": 148,
+            "uncompressed_bytes": 148
+          },
+          {
+            "file": "weights.npz",
+            "sha256": "df6109f30365dff0f87ab29fbc39193c7164d351413be1753d34967c0d79370e",
+            "file_bytes": 25934,
+            "uncompressed_bytes": 25456
+          }
+        ],
+        "uncompressed_bytes": 25604
+      },
+      "checkpoint": "code/runs/validation-study-v1/full_pairwise_a1_answer_mean/checkpoint"
+    },
+    {
+      "experiment_id": "full_pairwise_a0.1_none",
+      "config": {
+        "mode": "learned",
+        "feature_set": "full",
+        "objective": "pairwise",
+        "alpha": 0.1,
+        "pooling": "none",
+        "seed": 20261024
+      },
+      "accuracy": 91.8546365914787,
+      "correct": 733,
+      "n": 798,
+      "disagreement_accuracy": 81.69014084507043,
+      "disagreement_correct": 290,
+      "disagreement_n": 355,
+      "fit_seconds": 0.3554260000000795,
+      "feature_seconds": 0.5686883999997008,
+      "prediction_plus_scoring_seconds": 0.9088473000001613,
+      "assets": {
+        "files": [
+          {
+            "file": "config.json",
+            "sha256": "21035589ff43d3dbb81ff7a9af4ca780b6082fab93e0ec518c287a97646cda58",
+            "file_bytes": 141,
+            "uncompressed_bytes": 141
+          },
+          {
+            "file": "weights.npz",
+            "sha256": "d395cff54315a22a19a2d1b9ee51a55898277c66717281374e68af96948234b9",
+            "file_bytes": 25934,
+            "uncompressed_bytes": 25456
+          }
+        ],
+        "uncompressed_bytes": 25597
+      },
+      "checkpoint": "code/runs/validation-study-v1/full_pairwise_a0.1_none/checkpoint"
+    },
+    {
+      "experiment_id": "embedding_pairwise_a1_none",
+      "config": {
+        "mode": "learned",
+        "feature_set": "embedding",
+        "objective": "pairwise",
+        "alpha": 1.0,
+        "pooling": "none",
+        "seed": 20261024
+      },
+      "accuracy": 91.35338345864662,
+      "correct": 729,
+      "n": 798,
+      "disagreement_accuracy": 80.56338028169014,
+      "disagreement_correct": 286,
+      "disagreement_n": 355,
+      "fit_seconds": 0.37885889999961364,
+      "feature_seconds": 0.03619550000075833,
+      "prediction_plus_scoring_seconds": 0.7987284999999247,
+      "assets": {
+        "files": [
+          {
+            "file": "config.json",
+            "sha256": "6ac59bcbe3dbaeda3f417d171f0b20bab88543245b205fd218293097013cfbb9",
+            "file_bytes": 146,
+            "uncompressed_bytes": 146
+          },
+          {
+            "file": "weights.npz",
+            "sha256": "098fb684d2615d40df0a9ec65ba53900a8f42edb9a87b6917dad632eec4f0dd4",
+            "file_bytes": 25574,
+            "uncompressed_bytes": 25096
+          }
+        ],
+        "uncompressed_bytes": 25242
+      },
+      "checkpoint": "code/runs/validation-study-v1/embedding_pairwise_a1_none/checkpoint"
+    },
+    {
+      "experiment_id": "embedding_surface_pairwise_a0.1_answer_mean",
+      "config": {
+        "mode": "learned",
+        "feature_set": "embedding_surface",
+        "objective": "pairwise",
+        "alpha": 0.1,
+        "pooling": "answer_mean",
+        "seed": 20261024
+      },
+      "accuracy": 91.35338345864662,
+      "correct": 729,
+      "n": 798,
+      "disagreement_accuracy": 80.56338028169014,
+      "disagreement_correct": 286,
+      "disagreement_n": 355,
+      "fit_seconds": 0.38387539999985165,
+      "feature_seconds": 0.5685473000003185,
+      "prediction_plus_scoring_seconds": 0.8927074000002904,
+      "assets": {
+        "files": [
+          {
+            "file": "config.json",
+            "sha256": "692c513d0e69bcbe497adf50d55934891fd642be3294656a417ede786eef1d38",
+            "file_bytes": 161,
+            "uncompressed_bytes": 161
+          },
+          {
+            "file": "weights.npz",
+            "sha256": "14055e116aaae3ca68e842e056ef8a4d7a5cafe004e580987c61d873bd99fa08",
+            "file_bytes": 25862,
+            "uncompressed_bytes": 25384
+          }
+        ],
+        "uncompressed_bytes": 25545
+      },
+      "checkpoint": "code/runs/validation-study-v1/embedding_surface_pairwise_a0.1_answer_mean/checkpoint"
+    },
+    {
+      "experiment_id": "full_pairwise_a1_none",
+      "config": {
+        "mode": "learned",
+        "feature_set": "full",
+        "objective": "pairwise",
+        "alpha": 1.0,
+        "pooling": "none",
+        "seed": 20261024
+      },
+      "accuracy": 91.2280701754386,
+      "correct": 728,
+      "n": 798,
+      "disagreement_accuracy": 80.28169014084507,
+      "disagreement_correct": 285,
+      "disagreement_n": 355,
+      "fit_seconds": 0.42770609999934095,
+      "feature_seconds": 0.5686883999997008,
+      "prediction_plus_scoring_seconds": 0.8699297000002844,
+      "assets": {
+        "files": [
+          {
+            "file": "config.json",
+            "sha256": "8e840de1a2d389035db60770926cb637649ae733df8c8ab869d1f10b21d2e4e6",
+            "file_bytes": 141,
+            "uncompressed_bytes": 141
+          },
+          {
+            "file": "weights.npz",
+            "sha256": "df6109f30365dff0f87ab29fbc39193c7164d351413be1753d34967c0d79370e",
+            "file_bytes": 25934,
+            "uncompressed_bytes": 25456
+          }
+        ],
+        "uncompressed_bytes": 25597
+      },
+      "checkpoint": "code/runs/validation-study-v1/full_pairwise_a1_none/checkpoint"
+    },
+    {
+      "experiment_id": "embedding_pointwise_a0.1_none",
+      "config": {
+        "mode": "learned",
+        "feature_set": "embedding",
+        "objective": "pointwise",
+        "alpha": 0.1,
+        "pooling": "none",
+        "seed": 20261024
+      },
+      "accuracy": 90.97744360902256,
+      "correct": 726,
+      "n": 798,
+      "disagreement_accuracy": 79.71830985915493,
+      "disagreement_correct": 283,
+      "disagreement_n": 355,
+      "fit_seconds": 0.515400999999656,
+      "feature_seconds": 0.03786649999983638,
+      "prediction_plus_scoring_seconds": 0.8642988000001424,
+      "assets": {
+        "files": [
+          {
+            "file": "config.json",
+            "sha256": "c54ba4191f4b5accb9de3a2348358733aaad093b04f40fd3eeb04d5566553bbe",
+            "file_bytes": 147,
+            "uncompressed_bytes": 147
+          },
+          {
+            "file": "weights.npz",
+            "sha256": "88adf3ca27c8580c81adc055a75337ed8f36b3e4cbc41b110fb0998e7c579909",
+            "file_bytes": 25574,
+            "uncompressed_bytes": 25096
+          }
+        ],
+        "uncompressed_bytes": 25243
+      },
+      "checkpoint": "code/runs/validation-study-v1/embedding_pointwise_a0.1_none/checkpoint"
+    },
+    {
+      "experiment_id": "embedding_surface_pairwise_a10_none",
+      "config": {
+        "mode": "learned",
+        "feature_set": "embedding_surface",
+        "objective": "pairwise",
+        "alpha": 10.0,
+        "pooling": "none",
+        "seed": 20261024
+      },
+      "accuracy": 90.72681704260651,
+      "correct": 724,
+      "n": 798,
+      "disagreement_accuracy": 79.15492957746478,
+      "disagreement_correct": 281,
+      "disagreement_n": 355,
+      "fit_seconds": 0.35916160000033415,
+      "feature_seconds": 0.5685473000003185,
+      "prediction_plus_scoring_seconds": 0.8861268000000564,
+      "assets": {
+        "files": [
+          {
+            "file": "config.json",
+            "sha256": "fb11c984aac1f153ea1f2317ea4546f1c9ac940bf92d2c12f01cf8925874e1c3",
+            "file_bytes": 155,
+            "uncompressed_bytes": 155
+          },
+          {
+            "file": "weights.npz",
+            "sha256": "3d568836f4545b970ca23882c0ba0ce7a159770d71d0a9f827282051febaf653",
+            "file_bytes": 25862,
+            "uncompressed_bytes": 25384
+          }
+        ],
+        "uncompressed_bytes": 25539
+      },
+      "checkpoint": "code/runs/validation-study-v1/embedding_surface_pairwise_a10_none/checkpoint"
+    },
+    {
+      "experiment_id": "embedding_surface_pairwise_a1_answer_mean",
+      "config": {
+        "mode": "learned",
+        "feature_set": "embedding_surface",
+        "objective": "pairwise",
+        "alpha": 1.0,
+        "pooling": "answer_mean",
+        "seed": 20261024
+      },
+      "accuracy": 90.72681704260651,
+      "correct": 724,
+      "n": 798,
+      "disagreement_accuracy": 79.15492957746478,
+      "disagreement_correct": 281,
+      "disagreement_n": 355,
+      "fit_seconds": 0.36159159999988333,
+      "feature_seconds": 0.5685473000003185,
+      "prediction_plus_scoring_seconds": 0.946034000000509,
+      "assets": {
+        "files": [
+          {
+            "file": "config.json",
+            "sha256": "993895faabf2c2d492d1681e8196ce10d3fe84d49dc3f39e72db9c7f52a0c631",
+            "file_bytes": 161,
+            "uncompressed_bytes": 161
+          },
+          {
+            "file": "weights.npz",
+            "sha256": "25dc86aacf1a708360e2848fa883eef8f1d6671e9513f66a701f8d4ee205bf01",
+            "file_bytes": 25862,
+            "uncompressed_bytes": 25384
+          }
+        ],
+        "uncompressed_bytes": 25545
+      },
+      "checkpoint": "code/runs/validation-study-v1/embedding_surface_pairwise_a1_answer_mean/checkpoint"
+    },
+    {
+      "experiment_id": "embedding_pairwise_a0.1_answer_mean",
+      "config": {
+        "mode": "learned",
+        "feature_set": "embedding",
+        "objective": "pairwise",
+        "alpha": 0.1,
+        "pooling": "answer_mean",
+        "seed": 20261024
+      },
+      "accuracy": 90.47619047619048,
+      "correct": 722,
+      "n": 798,
+      "disagreement_accuracy": 78.59154929577464,
+      "disagreement_correct": 279,
+      "disagreement_n": 355,
+      "fit_seconds": 0.46721900000011374,
+      "feature_seconds": 0.03619550000075833,
+      "prediction_plus_scoring_seconds": 0.8169830999995611,
+      "assets": {
+        "files": [
+          {
+            "file": "config.json",
+            "sha256": "0afc11a6017dd90a1f0bebb4a00b2d718feec27a10ef9041a907ee4368071a92",
+            "file_bytes": 153,
+            "uncompressed_bytes": 153
+          },
+          {
+            "file": "weights.npz",
+            "sha256": "39af35ee42a550d03404a73197443d664c200ce66ea1a9a0ed23c06326d686a7",
+            "file_bytes": 25574,
+            "uncompressed_bytes": 25096
+          }
+        ],
+        "uncompressed_bytes": 25249
+      },
+      "checkpoint": "code/runs/validation-study-v1/embedding_pairwise_a0.1_answer_mean/checkpoint"
+    },
+    {
+      "experiment_id": "embedding_pairwise_a10_none",
+      "config": {
+        "mode": "learned",
+        "feature_set": "embedding",
+        "objective": "pairwise",
+        "alpha": 10.0,
+        "pooling": "none",
+        "seed": 20261024
+      },
+      "accuracy": 90.10025062656642,
+      "correct": 719,
+      "n": 798,
+      "disagreement_accuracy": 77.74647887323944,
+      "disagreement_correct": 276,
+      "disagreement_n": 355,
+      "fit_seconds": 0.3821358999994118,
+      "feature_seconds": 0.03619550000075833,
+      "prediction_plus_scoring_seconds": 0.7832282999997915,
+      "assets": {
+        "files": [
+          {
+            "file": "config.json",
+            "sha256": "512c79324de9eae2d3a30fb413aa58375831d4d2144a0aa5bed831a69edec300",
+            "file_bytes": 147,
+            "uncompressed_bytes": 147
+          },
+          {
+            "file": "weights.npz",
+            "sha256": "66b76c9cf3edcd8bb52150fdbdc024a9d8752032470a03a1043a6cac51b59811",
+            "file_bytes": 25574,
+            "uncompressed_bytes": 25096
+          }
+        ],
+        "uncompressed_bytes": 25243
+      },
+      "checkpoint": "code/runs/validation-study-v1/embedding_pairwise_a10_none/checkpoint"
+    },
+    {
+      "experiment_id": "full_pairwise_a10_answer_mean",
+      "config": {
+        "mode": "learned",
+        "feature_set": "full",
+        "objective": "pairwise",
+        "alpha": 10.0,
+        "pooling": "answer_mean",
+        "seed": 20261024
+      },
+      "accuracy": 89.97493734335839,
+      "correct": 718,
+      "n": 798,
+      "disagreement_accuracy": 77.46478873239437,
+      "disagreement_correct": 275,
+      "disagreement_n": 355,
+      "fit_seconds": 0.3706542999998419,
+      "feature_seconds": 0.5686883999997008,
+      "prediction_plus_scoring_seconds": 0.9219019000001936,
+      "assets": {
+        "files": [
+          {
+            "file": "config.json",
+            "sha256": "128308d3db1f16eec2cb5c0961059d7c56266081ffc02b22c7f64378f69781c3",
+            "file_bytes": 149,
+            "uncompressed_bytes": 149
+          },
+          {
+            "file": "weights.npz",
+            "sha256": "857b531bc27d45b8706e23d5c6b81c1d3edd841327cdf655427ed52e6b71fcf3",
+            "file_bytes": 25934,
+            "uncompressed_bytes": 25456
+          }
+        ],
+        "uncompressed_bytes": 25605
+      },
+      "checkpoint": "code/runs/validation-study-v1/full_pairwise_a10_answer_mean/checkpoint"
+    },
+    {
+      "experiment_id": "embedding_pairwise_a1_answer_mean",
+      "config": {
+        "mode": "learned",
+        "feature_set": "embedding",
+        "objective": "pairwise",
+        "alpha": 1.0,
+        "pooling": "answer_mean",
+        "seed": 20261024
+      },
+      "accuracy": 89.84962406015038,
+      "correct": 717,
+      "n": 798,
+      "disagreement_accuracy": 77.1830985915493,
+      "disagreement_correct": 274,
+      "disagreement_n": 355,
+      "fit_seconds": 0.37885889999961364,
+      "feature_seconds": 0.03619550000075833,
+      "prediction_plus_scoring_seconds": 0.8090174999997544,
+      "assets": {
+        "files": [
+          {
+            "file": "config.json",
+            "sha256": "15bac1bcc2674974c1b4e40c73f44a0182c76a7a425d1f864e76034ef5ad9994",
+            "file_bytes": 153,
+            "uncompressed_bytes": 153
+          },
+          {
+            "file": "weights.npz",
+            "sha256": "098fb684d2615d40df0a9ec65ba53900a8f42edb9a87b6917dad632eec4f0dd4",
+            "file_bytes": 25574,
+            "uncompressed_bytes": 25096
+          }
+        ],
+        "uncompressed_bytes": 25249
+      },
+      "checkpoint": "code/runs/validation-study-v1/embedding_pairwise_a1_answer_mean/checkpoint"
+    },
+    {
+      "experiment_id": "full_pairwise_a10_none",
+      "config": {
+        "mode": "learned",
+        "feature_set": "full",
+        "objective": "pairwise",
+        "alpha": 10.0,
+        "pooling": "none",
+        "seed": 20261024
+      },
+      "accuracy": 89.84962406015038,
+      "correct": 717,
+      "n": 798,
+      "disagreement_accuracy": 77.1830985915493,
+      "disagreement_correct": 274,
+      "disagreement_n": 355,
+      "fit_seconds": 0.3706542999998419,
+      "feature_seconds": 0.5686883999997008,
+      "prediction_plus_scoring_seconds": 0.9084366999995837,
+      "assets": {
+        "files": [
+          {
+            "file": "config.json",
+            "sha256": "17e68af43e3e1912592a5a9982461475e282a24196fd23fad49b9ce0add03fcd",
+            "file_bytes": 142,
+            "uncompressed_bytes": 142
+          },
+          {
+            "file": "weights.npz",
+            "sha256": "857b531bc27d45b8706e23d5c6b81c1d3edd841327cdf655427ed52e6b71fcf3",
+            "file_bytes": 25934,
+            "uncompressed_bytes": 25456
+          }
+        ],
+        "uncompressed_bytes": 25598
+      },
+      "checkpoint": "code/runs/validation-study-v1/full_pairwise_a10_none/checkpoint"
+    },
+    {
+      "experiment_id": "embedding_pointwise_a1_none",
+      "config": {
+        "mode": "learned",
+        "feature_set": "embedding",
+        "objective": "pointwise",
+        "alpha": 1.0,
+        "pooling": "none",
+        "seed": 20261024
+      },
+      "accuracy": 89.59899749373433,
+      "correct": 715,
+      "n": 798,
+      "disagreement_accuracy": 76.61971830985915,
+      "disagreement_correct": 272,
+      "disagreement_n": 355,
+      "fit_seconds": 0.5111851999999999,
+      "feature_seconds": 0.03786649999983638,
+      "prediction_plus_scoring_seconds": 0.8091428999996424,
+      "assets": {
+        "files": [
+          {
+            "file": "config.json",
+            "sha256": "11eeef3062c11d279454bb675dc906e69f4fffb95d7bba4ca3bb9ce6c38751a9",
+            "file_bytes": 147,
+            "uncompressed_bytes": 147
+          },
+          {
+            "file": "weights.npz",
+            "sha256": "2a9978c10a8bcc838455a15cef4d558539e25218bd8d834c6812e1df5c4e779e",
+            "file_bytes": 25574,
+            "uncompressed_bytes": 25096
+          }
+        ],
+        "uncompressed_bytes": 25243
+      },
+      "checkpoint": "code/runs/validation-study-v1/embedding_pointwise_a1_none/checkpoint"
+    },
+    {
+      "experiment_id": "embedding_pointwise_a0.1_answer_mean",
+      "config": {
+        "mode": "learned",
+        "feature_set": "embedding",
+        "objective": "pointwise",
+        "alpha": 0.1,
+        "pooling": "answer_mean",
+        "seed": 20261024
+      },
+      "accuracy": 88.97243107769424,
+      "correct": 710,
+      "n": 798,
+      "disagreement_accuracy": 75.21126760563381,
+      "disagreement_correct": 267,
+      "disagreement_n": 355,
+      "fit_seconds": 0.515400999999656,
+      "feature_seconds": 0.03786649999983638,
+      "prediction_plus_scoring_seconds": 0.9333478000007744,
+      "assets": {
+        "files": [
+          {
+            "file": "config.json",
+            "sha256": "44f04af91a19c2dab7de7df6e8bdd5c5c251169285abb583535e3d42cadfc9ba",
+            "file_bytes": 154,
+            "uncompressed_bytes": 154
+          },
+          {
+            "file": "weights.npz",
+            "sha256": "88adf3ca27c8580c81adc055a75337ed8f36b3e4cbc41b110fb0998e7c579909",
+            "file_bytes": 25574,
+            "uncompressed_bytes": 25096
+          }
+        ],
+        "uncompressed_bytes": 25250
+      },
+      "checkpoint": "code/runs/validation-study-v1/embedding_pointwise_a0.1_answer_mean/checkpoint"
+    },
+    {
+      "experiment_id": "embedding_pointwise_a10_none",
+      "config": {
+        "mode": "learned",
+        "feature_set": "embedding",
+        "objective": "pointwise",
+        "alpha": 10.0,
+        "pooling": "none",
+        "seed": 20261024
+      },
+      "accuracy": 88.7218045112782,
+      "correct": 708,
+      "n": 798,
+      "disagreement_accuracy": 74.64788732394366,
+      "disagreement_correct": 265,
+      "disagreement_n": 355,
+      "fit_seconds": 0.4911772999994355,
+      "feature_seconds": 0.03786649999983638,
+      "prediction_plus_scoring_seconds": 0.7807530000000042,
+      "assets": {
+        "files": [
+          {
+            "file": "config.json",
+            "sha256": "9bc268cff64c38b2cbacab32bd377cb23a54d987ff63bf7f46b40f6883d5f23a",
+            "file_bytes": 148,
+            "uncompressed_bytes": 148
+          },
+          {
+            "file": "weights.npz",
+            "sha256": "8d989208e3a0f2db2f0765a320a7624997173676e1475bd17718478b66353a0c",
+            "file_bytes": 25574,
+            "uncompressed_bytes": 25096
+          }
+        ],
+        "uncompressed_bytes": 25244
+      },
+      "checkpoint": "code/runs/validation-study-v1/embedding_pointwise_a10_none/checkpoint"
+    },
+    {
+      "experiment_id": "embedding_surface_pairwise_a10_answer_mean",
+      "config": {
+        "mode": "learned",
+        "feature_set": "embedding_surface",
+        "objective": "pairwise",
+        "alpha": 10.0,
+        "pooling": "answer_mean",
+        "seed": 20261024
+      },
+      "accuracy": 88.22055137844612,
+      "correct": 704,
+      "n": 798,
+      "disagreement_accuracy": 73.52112676056338,
+      "disagreement_correct": 261,
+      "disagreement_n": 355,
+      "fit_seconds": 0.35916160000033415,
+      "feature_seconds": 0.5685473000003185,
+      "prediction_plus_scoring_seconds": 0.9268575999994937,
+      "assets": {
+        "files": [
+          {
+            "file": "config.json",
+            "sha256": "5e1e816a9aad33ea23d862583366ce1f8ce1fa54709dd052e94b121fc96e6bde",
+            "file_bytes": 162,
+            "uncompressed_bytes": 162
+          },
+          {
+            "file": "weights.npz",
+            "sha256": "3d568836f4545b970ca23882c0ba0ce7a159770d71d0a9f827282051febaf653",
+            "file_bytes": 25862,
+            "uncompressed_bytes": 25384
+          }
+        ],
+        "uncompressed_bytes": 25546
+      },
+      "checkpoint": "code/runs/validation-study-v1/embedding_surface_pairwise_a10_answer_mean/checkpoint"
+    },
+    {
+      "experiment_id": "surface_pairwise_a0.1_none",
+      "config": {
+        "mode": "learned",
+        "feature_set": "surface",
+        "objective": "pairwise",
+        "alpha": 0.1,
+        "pooling": "none",
+        "seed": 20261024
+      },
+      "accuracy": 87.84461152882206,
+      "correct": 701,
+      "n": 798,
+      "disagreement_accuracy": 72.67605633802818,
+      "disagreement_correct": 258,
+      "disagreement_n": 355,
+      "fit_seconds": 0.04067190000023402,
+      "feature_seconds": 0.5153918999994858,
+      "prediction_plus_scoring_seconds": 0.8728953999998339,
+      "assets": {
+        "files": [
+          {
+            "file": "config.json",
+            "sha256": "9c268507ce3436e4cf2f602cd2d3198b9c1db720f9abefe83b46b53e2d4fef5a",
+            "file_bytes": 144,
+            "uncompressed_bytes": 144
+          },
+          {
+            "file": "weights.npz",
+            "sha256": "dffe1b15a7173c6f9dd422ef17e671bbee56ec9379b8bfe428304dba6984fe93",
+            "file_bytes": 1286,
+            "uncompressed_bytes": 808
+          }
+        ],
+        "uncompressed_bytes": 952
+      },
+      "checkpoint": "code/runs/validation-study-v1/surface_pairwise_a0.1_none/checkpoint"
+    },
+    {
+      "experiment_id": "embedding_pairwise_a10_answer_mean",
+      "config": {
+        "mode": "learned",
+        "feature_set": "embedding",
+        "objective": "pairwise",
+        "alpha": 10.0,
+        "pooling": "answer_mean",
+        "seed": 20261024
+      },
+      "accuracy": 87.59398496240601,
+      "correct": 699,
+      "n": 798,
+      "disagreement_accuracy": 72.11267605633803,
+      "disagreement_correct": 256,
+      "disagreement_n": 355,
+      "fit_seconds": 0.3821358999994118,
+      "feature_seconds": 0.03619550000075833,
+      "prediction_plus_scoring_seconds": 0.7859115999999631,
+      "assets": {
+        "files": [
+          {
+            "file": "config.json",
+            "sha256": "a0aa5162d1308045632c64211b94f25a79cbbe5efcbadb69405dd693bc5f9521",
+            "file_bytes": 154,
+            "uncompressed_bytes": 154
+          },
+          {
+            "file": "weights.npz",
+            "sha256": "66b76c9cf3edcd8bb52150fdbdc024a9d8752032470a03a1043a6cac51b59811",
+            "file_bytes": 25574,
+            "uncompressed_bytes": 25096
+          }
+        ],
+        "uncompressed_bytes": 25250
+      },
+      "checkpoint": "code/runs/validation-study-v1/embedding_pairwise_a10_answer_mean/checkpoint"
+    },
+    {
+      "experiment_id": "embedding_pointwise_a1_answer_mean",
+      "config": {
+        "mode": "learned",
+        "feature_set": "embedding",
+        "objective": "pointwise",
+        "alpha": 1.0,
+        "pooling": "answer_mean",
+        "seed": 20261024
+      },
+      "accuracy": 87.468671679198,
+      "correct": 698,
+      "n": 798,
+      "disagreement_accuracy": 71.83098591549296,
+      "disagreement_correct": 255,
+      "disagreement_n": 355,
+      "fit_seconds": 0.5111851999999999,
+      "feature_seconds": 0.03786649999983638,
+      "prediction_plus_scoring_seconds": 0.829334199999721,
+      "assets": {
+        "files": [
+          {
+            "file": "config.json",
+            "sha256": "d7df5eca8f88c4619b7aaea686d23ef8b21457710c36dd69a0f452b42d5fc97d",
+            "file_bytes": 154,
+            "uncompressed_bytes": 154
+          },
+          {
+            "file": "weights.npz",
+            "sha256": "2a9978c10a8bcc838455a15cef4d558539e25218bd8d834c6812e1df5c4e779e",
+            "file_bytes": 25574,
+            "uncompressed_bytes": 25096
+          }
+        ],
+        "uncompressed_bytes": 25250
+      },
+      "checkpoint": "code/runs/validation-study-v1/embedding_pointwise_a1_answer_mean/checkpoint"
+    },
+    {
+      "experiment_id": "surface_pairwise_a1_none",
+      "config": {
+        "mode": "learned",
+        "feature_set": "surface",
+        "objective": "pairwise",
+        "alpha": 1.0,
+        "pooling": "none",
+        "seed": 20261024
+      },
+      "accuracy": 87.34335839598998,
+      "correct": 697,
+      "n": 798,
+      "disagreement_accuracy": 71.54929577464789,
+      "disagreement_correct": 254,
+      "disagreement_n": 355,
+      "fit_seconds": 0.043093400000543625,
+      "feature_seconds": 0.5153918999994858,
+      "prediction_plus_scoring_seconds": 0.9524871000003259,
+      "assets": {
+        "files": [
+          {
+            "file": "config.json",
+            "sha256": "680b4c44860efff2642754871e061139e5ae59825ee9c769073984c43632995d",
+            "file_bytes": 144,
+            "uncompressed_bytes": 144
+          },
+          {
+            "file": "weights.npz",
+            "sha256": "1abcde4e8a7ee7c4e1415b45fd5fc4bf0d849b5b4d4e719839def66a02ff879a",
+            "file_bytes": 1286,
+            "uncompressed_bytes": 808
+          }
+        ],
+        "uncompressed_bytes": 952
+      },
+      "checkpoint": "code/runs/validation-study-v1/surface_pairwise_a1_none/checkpoint"
+    },
+    {
+      "experiment_id": "surface_pairwise_a10_none",
+      "config": {
+        "mode": "learned",
+        "feature_set": "surface",
+        "objective": "pairwise",
+        "alpha": 10.0,
+        "pooling": "none",
+        "seed": 20261024
+      },
+      "accuracy": 86.96741854636592,
+      "correct": 694,
+      "n": 798,
+      "disagreement_accuracy": 70.70422535211267,
+      "disagreement_correct": 251,
+      "disagreement_n": 355,
+      "fit_seconds": 0.0492445999998381,
+      "feature_seconds": 0.5153918999994858,
+      "prediction_plus_scoring_seconds": 0.9080243000007613,
+      "assets": {
+        "files": [
+          {
+            "file": "config.json",
+            "sha256": "b88fed6850dd5d9677535061b134a59ed0baebf68420876324bac15379dfd706",
+            "file_bytes": 145,
+            "uncompressed_bytes": 145
+          },
+          {
+            "file": "weights.npz",
+            "sha256": "9f1b8bbdead3bee6539c487f9d1356a84291f64d50f85f9ecf904c31c7caced0",
+            "file_bytes": 1286,
+            "uncompressed_bytes": 808
+          }
+        ],
+        "uncompressed_bytes": 953
+      },
+      "checkpoint": "code/runs/validation-study-v1/surface_pairwise_a10_none/checkpoint"
+    },
+    {
+      "experiment_id": "baseline_majority",
+      "config": {
+        "mode": "majority",
+        "seed": 20261024
+      },
+      "accuracy": 86.2155388471178,
+      "correct": 688,
+      "n": 798,
+      "disagreement_accuracy": 69.01408450704226,
+      "disagreement_correct": 245,
+      "disagreement_n": 355,
+      "fit_seconds": 0.0,
+      "feature_seconds": 0.0,
+      "prediction_plus_scoring_seconds": 0.7574954000001526,
+      "assets": {
+        "files": [
+          {
+            "file": "config.json",
+            "sha256": "ed93b90dd8f870a9542cfd8d2f70483609f1c7b72646a70a01a9550eb30279f6",
+            "file_bytes": 49,
+            "uncompressed_bytes": 49
+          }
+        ],
+        "uncompressed_bytes": 49
+      },
+      "checkpoint": "code/runs/validation-study-v1/baseline_majority/checkpoint"
+    },
+    {
+      "experiment_id": "surface_pairwise_a0.1_answer_mean",
+      "config": {
+        "mode": "learned",
+        "feature_set": "surface",
+        "objective": "pairwise",
+        "alpha": 0.1,
+        "pooling": "answer_mean",
+        "seed": 20261024
+      },
+      "accuracy": 85.83959899749374,
+      "correct": 685,
+      "n": 798,
+      "disagreement_accuracy": 68.16901408450704,
+      "disagreement_correct": 242,
+      "disagreement_n": 355,
+      "fit_seconds": 0.04067190000023402,
+      "feature_seconds": 0.5153918999994858,
+      "prediction_plus_scoring_seconds": 0.890614099999766,
+      "assets": {
+        "files": [
+          {
+            "file": "config.json",
+            "sha256": "c60056a550c6c677a3ee72e9b39d3a0321bb57f8ada19333f576fe1d294f5048",
+            "file_bytes": 151,
+            "uncompressed_bytes": 151
+          },
+          {
+            "file": "weights.npz",
+            "sha256": "dffe1b15a7173c6f9dd422ef17e671bbee56ec9379b8bfe428304dba6984fe93",
+            "file_bytes": 1286,
+            "uncompressed_bytes": 808
+          }
+        ],
+        "uncompressed_bytes": 959
+      },
+      "checkpoint": "code/runs/validation-study-v1/surface_pairwise_a0.1_answer_mean/checkpoint"
+    },
+    {
+      "experiment_id": "surface_pairwise_a1_answer_mean",
+      "config": {
+        "mode": "learned",
+        "feature_set": "surface",
+        "objective": "pairwise",
+        "alpha": 1.0,
+        "pooling": "answer_mean",
+        "seed": 20261024
+      },
+      "accuracy": 85.83959899749374,
+      "correct": 685,
+      "n": 798,
+      "disagreement_accuracy": 68.16901408450704,
+      "disagreement_correct": 242,
+      "disagreement_n": 355,
+      "fit_seconds": 0.043093400000543625,
+      "feature_seconds": 0.5153918999994858,
+      "prediction_plus_scoring_seconds": 0.8681940000005852,
+      "assets": {
+        "files": [
+          {
+            "file": "config.json",
+            "sha256": "25772038070f38a3c6b46d0201e2c988d1f8917f3e5d0725ed6267d1e606b749",
+            "file_bytes": 151,
+            "uncompressed_bytes": 151
+          },
+          {
+            "file": "weights.npz",
+            "sha256": "1abcde4e8a7ee7c4e1415b45fd5fc4bf0d849b5b4d4e719839def66a02ff879a",
+            "file_bytes": 1286,
+            "uncompressed_bytes": 808
+          }
+        ],
+        "uncompressed_bytes": 959
+      },
+      "checkpoint": "code/runs/validation-study-v1/surface_pairwise_a1_answer_mean/checkpoint"
+    },
+    {
+      "experiment_id": "embedding_pointwise_a10_answer_mean",
+      "config": {
+        "mode": "learned",
+        "feature_set": "embedding",
+        "objective": "pointwise",
+        "alpha": 10.0,
+        "pooling": "answer_mean",
+        "seed": 20261024
+      },
+      "accuracy": 85.58897243107769,
+      "correct": 683,
+      "n": 798,
+      "disagreement_accuracy": 67.6056338028169,
+      "disagreement_correct": 240,
+      "disagreement_n": 355,
+      "fit_seconds": 0.4911772999994355,
+      "feature_seconds": 0.03786649999983638,
+      "prediction_plus_scoring_seconds": 0.8192804999998771,
+      "assets": {
+        "files": [
+          {
+            "file": "config.json",
+            "sha256": "c3c2784624a22b20130a94aa13c5ba30ddfe4f10200f9edccc191a6e10035306",
+            "file_bytes": 155,
+            "uncompressed_bytes": 155
+          },
+          {
+            "file": "weights.npz",
+            "sha256": "8d989208e3a0f2db2f0765a320a7624997173676e1475bd17718478b66353a0c",
+            "file_bytes": 25574,
+            "uncompressed_bytes": 25096
+          }
+        ],
+        "uncompressed_bytes": 25251
+      },
+      "checkpoint": "code/runs/validation-study-v1/embedding_pointwise_a10_answer_mean/checkpoint"
+    },
+    {
+      "experiment_id": "surface_pairwise_a10_answer_mean",
+      "config": {
+        "mode": "learned",
+        "feature_set": "surface",
+        "objective": "pairwise",
+        "alpha": 10.0,
+        "pooling": "answer_mean",
+        "seed": 20261024
+      },
+      "accuracy": 84.9624060150376,
+      "correct": 678,
+      "n": 798,
+      "disagreement_accuracy": 66.19718309859155,
+      "disagreement_correct": 235,
+      "disagreement_n": 355,
+      "fit_seconds": 0.0492445999998381,
+      "feature_seconds": 0.5153918999994858,
+      "prediction_plus_scoring_seconds": 0.859679999999571,
+      "assets": {
+        "files": [
+          {
+            "file": "config.json",
+            "sha256": "f7299216ba3af579d5d2579bbde60eca6f23618259e60052ea19d8ca8e36aaab",
+            "file_bytes": 152,
+            "uncompressed_bytes": 152
+          },
+          {
+            "file": "weights.npz",
+            "sha256": "9f1b8bbdead3bee6539c487f9d1356a84291f64d50f85f9ecf904c31c7caced0",
+            "file_bytes": 1286,
+            "uncompressed_bytes": 808
+          }
+        ],
+        "uncompressed_bytes": 960
+      },
+      "checkpoint": "code/runs/validation-study-v1/surface_pairwise_a10_answer_mean/checkpoint"
+    },
+    {
+      "experiment_id": "baseline_first",
+      "config": {
+        "mode": "first",
+        "seed": 20261024
+      },
+      "accuracy": 78.19548872180451,
+      "correct": 624,
+      "n": 798,
+      "disagreement_accuracy": 54.929577464788736,
+      "disagreement_correct": 195,
+      "disagreement_n": 355,
+      "fit_seconds": 0.0,
+      "feature_seconds": 0.0,
+      "prediction_plus_scoring_seconds": 0.815401999999267,
+      "assets": {
+        "files": [
+          {
+            "file": "config.json",
+            "sha256": "214d943902d26ef89faed4a90296d3dfb5a8aebc818890ab070ba66b60ce9da2",
+            "file_bytes": 46,
+            "uncompressed_bytes": 46
+          }
+        ],
+        "uncompressed_bytes": 46
+      },
+      "checkpoint": "code/runs/validation-study-v1/baseline_first/checkpoint"
+    },
+    {
+      "experiment_id": "baseline_shortest",
+      "config": {
+        "mode": "shortest",
+        "seed": 20261024
+      },
+      "accuracy": 73.1829573934837,
+      "correct": 584,
+      "n": 798,
+      "disagreement_accuracy": 39.718309859154935,
+      "disagreement_correct": 141,
+      "disagreement_n": 355,
+      "fit_seconds": 0.0,
+      "feature_seconds": 0.0,
+      "prediction_plus_scoring_seconds": 0.7958383000004687,
+      "assets": {
+        "files": [
+          {
+            "file": "config.json",
+            "sha256": "186812d8a13d3bdffa3718f59cb8931395e2f0eb7031f1801978c35452780744",
+            "file_bytes": 49,
+            "uncompressed_bytes": 49
+          }
+        ],
+        "uncompressed_bytes": 49
+      },
+      "checkpoint": "code/runs/validation-study-v1/baseline_shortest/checkpoint"
+    }
+  ]
+}

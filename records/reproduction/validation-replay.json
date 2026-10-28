@@ -1,0 +1,32 @@
+{
+  "status": "passed",
+  "checkpoint_bytes_identical_after_retraining": true,
+  "validation_choices_identical": true,
+  "score": {
+    "protocol": "dase7506-mp2-open-hard-verifier-v5",
+    "split": "validation",
+    "correct": 739,
+    "n": 798,
+    "accuracy": 92.60651629072682,
+    "scoring_seconds": 0.052897999999913736
+  },
+  "prediction_plus_scoring_seconds": 0.9240685000004305,
+  "baseline_replays": 3,
+  "assets": {
+    "files": [
+      {
+        "file": "config.json",
+        "sha256": "072d892d781c80b95ba387567526993bf297a02391581aab76806526a520589a",
+        "file_bytes": 154,
+        "uncompressed_bytes": 154
+      },
+      {
+        "file": "weights.npz",
+        "sha256": "14055e116aaae3ca68e842e056ef8a4d7a5cafe004e580987c61d873bd99fa08",
+        "file_bytes": 25862,
+        "uncompressed_bytes": 25384
+      }
+    ],
+    "uncompressed_bytes": 25538
+  }
+}

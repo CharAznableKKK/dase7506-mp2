@@ -1,0 +1,49 @@
+{
+  "evaluated_at": "2026-10-24T22:23:09.847474+08:00",
+  "source_commit": "cf8e1ca64c8d51ae0edb04e276acebbb38c56398",
+  "prediction_plus_scoring_seconds": 0.7545281000002433,
+  "cpu": "Intel Core i9-12900H",
+  "threads": 4,
+  "reference_cpu_verified": false,
+  "commands": [
+    {
+      "argv": [
+        "D:\\STEPHEN\\OpenAI\\DASE7506\\MP2\\.venv\\Scripts\\python.exe",
+        "code/predict.py",
+        "--method",
+        "code/selection.py",
+        "--checkpoint",
+        "assets/final",
+        "--split",
+        "test",
+        "--output",
+        "records/final/test-predictions.json"
+      ],
+      "stdout": "{\"protocol\": \"dase7506-mp2-open-hard-verifier-v5\", \"split\": \"test\", \"prediction_seconds\": 0.15664600000036444}\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "D:\\STEPHEN\\OpenAI\\DASE7506\\MP2\\.venv\\Scripts\\python.exe",
+        "code/score_predictions.py",
+        "--split",
+        "test",
+        "--predictions",
+        "records/final/test-predictions.json",
+        "--output",
+        "records/final/test-score.json"
+      ],
+      "stdout": "{\n  \"protocol\": \"dase7506-mp2-open-hard-verifier-v5\",\n  \"split\": \"test\",\n  \"correct\": 384,\n  \"n\": 467,\n  \"accuracy\": 82.22698072805139,\n  \"scoring_seconds\": 0.032512999999198655\n}\n",
+      "stderr": ""
+    }
+  ],
+  "score": {
+    "protocol": "dase7506-mp2-open-hard-verifier-v5",
+    "split": "test",
+    "correct": 384,
+    "n": 467,
+    "accuracy": 82.22698072805139,
+    "scoring_seconds": 0.032512999999198655
+  },
+  "inference_assets_uncompressed_bytes": 25530
+}

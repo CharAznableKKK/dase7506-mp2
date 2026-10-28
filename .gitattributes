@@ -1,0 +1,7 @@
+# Preserve official LF bytes so hash-based data checks also pass on Windows.
+* text=auto eol=lf
+*.npz -text
+*.npy -text
+*.pdf -text
+*.png -text
+*.jpg -text

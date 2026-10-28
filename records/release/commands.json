@@ -1,0 +1,172 @@
+[
+  {
+    "argv": [
+      "C:\\Users\\krabs\\.codex\\worktrees\\871c\\MP2\\.venv\\Scripts\\python.exe",
+      "-B",
+      "-m",
+      "pip",
+      "check"
+    ],
+    "cwd": "C:\\Users\\krabs\\.codex\\worktrees\\871c\\MP2\\github-release",
+    "returncode": 0,
+    "seconds": 0.7283833000110462,
+    "stdout": "No broken requirements found.\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "C:\\Users\\krabs\\.codex\\worktrees\\871c\\MP2\\.venv\\Scripts\\python.exe",
+      "-B",
+      "code/check_data.py"
+    ],
+    "cwd": "C:\\Users\\krabs\\.codex\\worktrees\\871c\\MP2\\github-release",
+    "returncode": 0,
+    "seconds": 1.1978628999786451,
+    "stdout": "{\n  \"protocol\": \"dase7506-mp2-open-hard-verifier-v5\",\n  \"splits\": {\n    \"train\": {\n      \"questions\": 4755,\n      \"embedding_shape\": [\n        4755,\n        4,\n        1024\n      ]\n    },\n    \"validation\": {\n      \"questions\": 798,\n      \"embedding_shape\": [\n        798,\n        4,\n        1024\n      ]\n    },\n    \"test\": {\n      \"questions\": 467,\n      \"embedding_shape\": [\n        467,\n        4,\n        1024\n      ]\n    }\n  },\n  \"status\": \"passed\"\n}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "C:\\Users\\krabs\\.codex\\worktrees\\871c\\MP2\\.venv\\Scripts\\python.exe",
+      "-B",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "code",
+      "-p",
+      "test_project.py",
+      "-v"
+    ],
+    "cwd": "C:\\Users\\krabs\\.codex\\worktrees\\871c\\MP2\\github-release",
+    "returncode": 0,
+    "seconds": 0.48342659999616444,
+    "stdout": "",
+    "stderr": "test_answer_pooling_changes_choice_using_only_same_answer_evidence (test_project.SelectionTests.test_answer_pooling_changes_choice_using_only_same_answer_evidence) ... ok\ntest_equivalent_numbers_share_votes_and_invalid_is_not_a_vote (test_project.SelectionTests.test_equivalent_numbers_share_votes_and_invalid_is_not_a_vote) ... ok\ntest_feature_contract_rejects_misaligned_embeddings (test_project.SelectionTests.test_feature_contract_rejects_misaligned_embeddings) ... ok\ntest_invalid_candidate_never_beats_valid_and_ties_are_stable (test_project.SelectionTests.test_invalid_candidate_never_beats_valid_and_ties_are_stable) ... ok\ntest_predictions_do_not_depend_on_ids_question_count_or_order (test_project.SelectionTests.test_predictions_do_not_depend_on_ids_question_count_or_order) ... ok\ntest_surface_features_handle_fractions_negative_values_and_missing_answers (test_project.SelectionTests.test_surface_features_handle_fractions_negative_values_and_missing_answers) ... ok\ntest_labels_keep_all_correct_candidates_and_reject_reference_mismatch (test_project.TrainingTests.test_labels_keep_all_correct_candidates_and_reject_reference_mismatch) ... ok\ntest_pairwise_fit_learns_correct_direction_and_roundtrips_checkpoint (test_project.TrainingTests.test_pairwise_fit_learns_correct_direction_and_roundtrips_checkpoint) ... ok\ntest_training_loader_refuses_test_and_validation_before_reading_files (test_project.TrainingTests.test_training_loader_refuses_test_and_validation_before_reading_files) ... ok\n\n----------------------------------------------------------------------\nRan 9 tests in 0.136s\n\nOK\n"
+  },
+  {
+    "argv": [
+      "C:\\Users\\krabs\\.codex\\worktrees\\871c\\MP2\\.venv\\Scripts\\python.exe",
+      "-B",
+      "code/check_method.py",
+      "--checkpoint",
+      "assets/final",
+      "--output",
+      "C:\\Users\\krabs\\.codex\\worktrees\\871c\\MP2\\code\\runs\\release-verification-v2\\method-check.json"
+    ],
+    "cwd": "C:\\Users\\krabs\\.codex\\worktrees\\871c\\MP2\\github-release",
+    "returncode": 0,
+    "seconds": 0.6817198999924585,
+    "stdout": "{\n  \"status\": \"passed\",\n  \"checks\": [\n    \"native integer indices\",\n    \"798-question bank\",\n    \"37-question reversed subset\",\n    \"unseen IDs\",\n    \"single question\",\n    \"empty bank\",\n    \"empty working directory\",\n    \"checkpoint-only file reads\",\n    \"network audit hook\",\n    \"loaded library thread count <= 4\"\n  ],\n  \"files_read_during_inference\": [\n    \"config.json\",\n    \"weights.npz\"\n  ],\n  \"threadpools\": [\n    {\n      \"user_api\": \"blas\",\n      \"internal_api\": \"openblas\",\n      \"num_threads\": 4,\n      \"prefix\": \"libscipy_openblas\",\n      \"filepath\": \"C:\\\\Users\\\\krabs\\\\.codex\\\\worktrees\\\\871c\\\\MP2\\\\.venv\\\\Lib\\\\site-packages\\\\numpy.libs\\\\libscipy_openblas64_-ed4f167a5330424524f45258e7ca2c8d.dll\",\n      \"version\": \"0.3.34.106.0\",\n      \"threading_layer\": \"pthreads\",\n      \"architecture\": \"Haswell\"\n    }\n  ],\n  \"cpu\": \"12th Gen Intel(R) Core(TM) i9-12900H\",\n  \"os\": \"Windows-11-10.0.22631-SP0\",\n  \"logical_cpu_count\": 20,\n  \"verification_seconds\": 0.23747729999013245,\n  \"reference_cpu_verified\": false,\n  \"references_read\": false\n}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "C:\\Users\\krabs\\.codex\\worktrees\\871c\\MP2\\.venv\\Scripts\\python.exe",
+      "-B",
+      "code/train_model.py",
+      "--config",
+      "assets/final/config.json",
+      "--output",
+      "C:\\Users\\krabs\\.codex\\worktrees\\871c\\MP2\\code\\runs\\release-verification-v2\\retrained",
+      "--record",
+      "C:\\Users\\krabs\\.codex\\worktrees\\871c\\MP2\\code\\runs\\release-verification-v2\\training.json"
+    ],
+    "cwd": "C:\\Users\\krabs\\.codex\\worktrees\\871c\\MP2\\github-release",
+    "returncode": 0,
+    "seconds": 2.04987590003293,
+    "stdout": "{\n  \"config\": {\n    \"mode\": \"learned\",\n    \"feature_set\": \"embedding_surface\",\n    \"objective\": \"pairwise\",\n    \"alpha\": 0.1,\n    \"pooling\": \"none\",\n    \"seed\": 20261024\n  },\n  \"training_seconds\": 1.7218059999868274,\n  \"training_split\": \"train\",\n  \"validation_used_for_fit\": false,\n  \"test_read\": false\n}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "C:\\Users\\krabs\\.codex\\worktrees\\871c\\MP2\\.venv\\Scripts\\python.exe",
+      "-B",
+      "code/predict.py",
+      "--method",
+      "code/selection.py",
+      "--checkpoint",
+      "assets/final",
+      "--split",
+      "test",
+      "--output",
+      "C:\\Users\\krabs\\.codex\\worktrees\\871c\\MP2\\code\\runs\\release-verification-v2\\test-predictions.json"
+    ],
+    "cwd": "C:\\Users\\krabs\\.codex\\worktrees\\871c\\MP2\\github-release",
+    "returncode": 0,
+    "seconds": 0.46445490000769496,
+    "stdout": "{\"protocol\": \"dase7506-mp2-open-hard-verifier-v5\", \"split\": \"test\", \"prediction_seconds\": 0.16424569999799132}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "C:\\Users\\krabs\\.codex\\worktrees\\871c\\MP2\\.venv\\Scripts\\python.exe",
+      "-B",
+      "code/score_predictions.py",
+      "--split",
+      "test",
+      "--predictions",
+      "C:\\Users\\krabs\\.codex\\worktrees\\871c\\MP2\\code\\runs\\release-verification-v2\\test-predictions.json",
+      "--output",
+      "C:\\Users\\krabs\\.codex\\worktrees\\871c\\MP2\\code\\runs\\release-verification-v2\\test-score.json"
+    ],
+    "cwd": "C:\\Users\\krabs\\.codex\\worktrees\\871c\\MP2\\github-release",
+    "returncode": 0,
+    "seconds": 0.32163720001699403,
+    "stdout": "{\n  \"protocol\": \"dase7506-mp2-open-hard-verifier-v5\",\n  \"split\": \"test\",\n  \"correct\": 384,\n  \"n\": 467,\n  \"accuracy\": 82.22698072805139,\n  \"scoring_seconds\": 0.03656480001518503\n}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "C:\\Users\\krabs\\.codex\\worktrees\\871c\\MP2\\.venv\\Scripts\\python.exe",
+      "-B",
+      "code/predict.py",
+      "--method",
+      "code/selection.py",
+      "--checkpoint",
+      "assets/final",
+      "--split",
+      "test",
+      "--output",
+      "C:\\Users\\krabs\\.codex\\worktrees\\871c\\MP2\\code\\runs\\release-verification-v2\\test-predictions.json"
+    ],
+    "cwd": "C:\\Users\\krabs\\.codex\\worktrees\\871c\\MP2\\github-release",
+    "returncode": 0,
+    "seconds": 0.4776455999817699,
+    "stdout": "{\"protocol\": \"dase7506-mp2-open-hard-verifier-v5\", \"split\": \"test\", \"prediction_seconds\": 0.16126790002454072}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "C:\\Users\\krabs\\.codex\\worktrees\\871c\\MP2\\.venv\\Scripts\\python.exe",
+      "-B",
+      "code/score_predictions.py",
+      "--split",
+      "test",
+      "--predictions",
+      "C:\\Users\\krabs\\.codex\\worktrees\\871c\\MP2\\code\\runs\\release-verification-v2\\test-predictions.json",
+      "--output",
+      "C:\\Users\\krabs\\.codex\\worktrees\\871c\\MP2\\code\\runs\\release-verification-v2\\test-score.json"
+    ],
+    "cwd": "C:\\Users\\krabs\\.codex\\worktrees\\871c\\MP2\\github-release",
+    "returncode": 0,
+    "seconds": 0.31277449999470264,
+    "stdout": "{\n  \"protocol\": \"dase7506-mp2-open-hard-verifier-v5\",\n  \"split\": \"test\",\n  \"correct\": 384,\n  \"n\": 467,\n  \"accuracy\": 82.22698072805139,\n  \"scoring_seconds\": 0.03215659997658804\n}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "C:\\Users\\krabs\\.codex\\worktrees\\871c\\MP2\\.venv\\Scripts\\python.exe",
+      "-B",
+      "-m",
+      "pip",
+      "list",
+      "--format=json"
+    ],
+    "cwd": "C:\\Users\\krabs\\.codex\\worktrees\\871c\\MP2\\github-release",
+    "returncode": 0,
+    "seconds": 0.5823071000049822,
+    "stdout": "[{\"name\": \"numpy\", \"version\": \"2.5.3\"}, {\"name\": \"pip\", \"version\": \"25.0.1\"}, {\"name\": \"threadpoolctl\", \"version\": \"3.6.0\"}]\n",
+    "stderr": ""
+  }
+]

@@ -1,0 +1,15 @@
+{
+  "checked_date_utc8": "2026-10-25",
+  "official_package_files": 20,
+  "official_package_integrity": "passed",
+  "frozen_hashes": "passed",
+  "clean_reproduction": "passed",
+  "report_format": "Markdown source and six-page self-contained A4 HTML",
+  "report_word_count": 2285,
+  "report_word_count_updated_date_utc8": "2026-10-28",
+  "report_page_count": 6,
+  "disclosure_location": "report/REPORT.md, section 7",
+  "final_review": "records/reviews/delivery-review.md",
+  "scope": "Technical integrity and reproduction summary. Report metadata reflects the current repository documents.",
+  "report_layout_verification": "records/release/verification.json"
+}
